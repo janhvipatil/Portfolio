@@ -4,10 +4,11 @@ import lightLogo from '../../assets/logo-light.svg'
 import darkLogo from '../../assets/logo-dark.png'
 
 interface Props {
-    width: number
+    height: number,
+    width: number,
 }
 
-export const Logo = ({ width, ...props }: Props) => {
+export const Logo = ({ height, width, ...props }: Props) => {
 
     const logo = useColorModeValue(lightLogo, darkLogo)
 
@@ -16,6 +17,7 @@ export const Logo = ({ width, ...props }: Props) => {
             <Image src={logo}
                 objectFit="contain"
                 alt="logo"
+                height={height}
                 width={width}
             />
         </Box>

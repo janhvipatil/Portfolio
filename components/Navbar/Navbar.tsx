@@ -1,9 +1,10 @@
 import { ReactNode } from "react"
-import { Box, Flex, HStack, Button, useDisclosure, Stack, useColorModeValue } from "@chakra-ui/react"
+import { Box, Flex, HStack, Button, useDisclosure, Stack, useColorModeValue, Text } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5"
 import navStyles from "./navbar.module.css"
 import Link from "next/link"
+import { Logo } from "../Logo/Logo"
 
 const Links = [
     {
@@ -37,7 +38,7 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => {
                 transition: 'all ease-in-out .2s',
                 borderBottom: `1px solid ${borderColor}`
             }}>
-            <Link href={path}>{children}</Link>
+            <Link href={path}><Text fontSize='lg'>{children}</Text></Link>
         </Box>
     )
 }
@@ -75,13 +76,13 @@ export const Navbar = () => {
 
                 <Flex display={{ base: 'none', md: 'flex' }} justifyContent='space-between' width='full'>
                     <Box>
-                        Janhvi
+                        <Logo height={40} width={40} />
                     </Box>
                     <HStack spacing={8} alignItems='center'>
                         <ColorModeSwitcher />
                         <HStack
                             as='nav'
-                            spacing={8}>
+                            spacing={10}>
                             {Links.map(({ name, path }) => (
                                 <NavLink key={path} path={path}>
                                     {name}
@@ -91,7 +92,7 @@ export const Navbar = () => {
                         <Button
                             variant='outline'
                             colorScheme='blue'
-                            size={"sm"}>
+                            size='md'>
                             Resume
                         </Button>
                     </HStack>
