@@ -1,10 +1,10 @@
-import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Heading, Stack, Text } from '@chakra-ui/react'
 
 type Props = {}
 
 export const MainContent = (props: Props) => {
     return (
-        <Box h='68vh' mt={20}>
+        <Center mt={10} mb={40}>
             <Stack spacing={10}>
                 <Stack spacing={2}>
                     <Text fontSize='xl'>Hi <span>👋</span>, I am</Text>
@@ -23,6 +23,6 @@ export const MainContent = (props: Props) => {
                     Get in touch
                 </Button>
             </Stack>
-        </Box>
+        </Center>
     )
 }

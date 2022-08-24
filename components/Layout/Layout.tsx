@@ -10,15 +10,17 @@ export const Layout = () => {
     return (
         <>
             <Navbar />
-            <Grid templateColumns='repeat(10, 1fr)' gap={6}>
+            <Grid templateColumns='repeat(10, 1fr)' gap={6} mt={10}>
                 <GridItem colSpan={1}>
                     <Sidebar />
                 </GridItem>
                 <GridItem colSpan={5}>
                     <MainContent />
                 </GridItem>
-                <GridItem colSpan={4} pt={20} pr={4}>
-                    <Image src={hero} alt="hero image" />
+                <GridItem colSpan={4}>
+                    <Center pt={10} pr={6}>
+                        <Image src={hero} alt="hero image" />
+                    </Center>
                 </GridItem>
             </Grid>
             <Footer />

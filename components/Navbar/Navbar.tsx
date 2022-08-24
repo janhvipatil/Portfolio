@@ -21,7 +21,7 @@ const Links = [
     },
     {
         name: "Get in touch",
-        path: "/contact",
+        path: "/Contact",
     },
 ]
 
@@ -36,7 +36,8 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => {
                 textDecoration: 'none',
                 transform: 'scale(1.05)',
                 transition: 'all ease-in-out .2s',
-                borderBottom: `1px solid ${borderColor}`
+                borderBottom: `1px solid ${borderColor}`,
+                cursor: 'pointer'
             }}>
             <Link href={path}><Text fontSize='lg'>{children}</Text></Link>
         </Box>
@@ -75,8 +76,15 @@ export const Navbar = () => {
                 </Stack>
 
                 <Flex display={{ base: 'none', md: 'flex' }} justifyContent='space-between' width='full'>
-                    <Box>
-                        <Logo height={40} width={40} />
+                    <Box
+                        _hover={{
+                            transform: 'scale(1.05)',
+                            transition: 'all ease-in-out .2s',
+                            cursor: 'pointer'
+                        }}>
+                        <Link href={'/'}>
+                            <Logo height={40} width={40} />
+                        </Link>
                     </Box>
                     <HStack spacing={8} alignItems='center'>
                         <ColorModeSwitcher />
