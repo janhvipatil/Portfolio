@@ -26,7 +26,7 @@ const Contact = (props: Props) => {
                         <Stack spacing={6}>
                             <Stack>
                                 <Heading as='h2' fontSize='6xl'>Lets talk.</Heading>
-                                <Heading as='h2' fontSize='5xl'>Tell me about your project</Heading>
+                                <Heading as='h2' fontSize='6xl'>Tell me about your project</Heading>
                             </Stack>
                             <Text fontSize='lg' color='blue.700'>We can build something amazing together 🤘</Text>
                             <Box boxShadow='base' p='4' rounded='md' bg={boxBG} width='80%'>
