@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, HStack, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
-import { MdOutlineAlternateEmail, MdOutlineCake, MdOutlineMail } from 'react-icons/md'
+import { MdOutlineAlternateEmail, MdOutlineCake } from 'react-icons/md'
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import Image from 'next/image'
 import workspaceLight from '../assets/workspace-light.jpg'
@@ -9,19 +9,14 @@ import avatar from '../assets/avatar.png'
 import arrowDark from '../assets/curved-arrow-dark.png'
 import arrowLight from '../assets/curved-arrow-light.png'
 import styles from '../styles/CustomStyles.module.css'
-import { FiMail } from 'react-icons/fi'
-
-
-type Props = {
-    headingText: string,
-    boxColor: string,
-    chars: number
-}
+import { CustomHeading } from '../components/CustomHeading/CustomHeading'
+import { TechStack } from '../components/TechStack/TechStack'
 
 const About = () => {
 
     const workspace = useColorModeValue(workspaceLight, workspaceDark)
     const arrow = useColorModeValue(arrowLight, arrowDark)
+
     return (
         <>
             <Flex px={40} pt='32' pb='32'>
@@ -90,7 +85,7 @@ const About = () => {
                 </Box>
             </Flex>
             <Flex>
-                <Box pl={40} pb={32}>
+                <Box pl={40} pb={24}>
                     <HStack spacing={16}>
                         <Box style={{ borderRadius: '10px', overflow: 'hidden' }}>
                             <Image src={workspace}
@@ -121,46 +116,12 @@ const About = () => {
                     </HStack>
                 </Box>
             </Flex>
+            <Flex>
+                <Box pl={40} pb={32}>
+                    <TechStack />
+                </Box>
+            </Flex>
         </>
-    )
-}
-
-const CustomHeading = ({ headingText, boxColor, chars }: Props) => {
-
-    const words = headingText.split(' ')
-    const color = useColorModeValue('black', 'black')
-    return (
-        <Box>
-            <Box display={'inline-block'} pos='relative'>
-                <Text
-                    as='span'
-                    zIndex='10'
-                    pos='relative'
-                    fontWeight={'bold'}
-                    fontSize='36px' >{words.map((w, index) => {
-                        if (index === words.length - 1) {
-                            return <Text as='span' color={color}>
-                                {w}
-                            </Text>
-                        } else {
-                            return w + " "
-                        }
-                    })}
-                    <br />
-                </Text>
-                <Box
-                    as='span'
-                    pos='absolute'
-                    zIndex={'0'}
-                    fontSize='36px'
-                    bg={boxColor}
-                    height='30px'
-                    width={`${chars}ch`}
-                    right='-3'
-                    rounded='lg'
-                    bottom='8px'></Box>
-            </Box>
-        </Box>
     )
 }
 

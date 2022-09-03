@@ -8,16 +8,12 @@ import { HiDownload } from 'react-icons/hi'
 
 const Links = [
     {
-        name: "About",
-        path: "/about",
-    },
-    {
         name: "Projects",
         path: "/projects",
     },
     {
-        name: "Work",
-        path: "/work",
+        name: "About",
+        path: "/about",
     },
     {
         name: "Contact",
