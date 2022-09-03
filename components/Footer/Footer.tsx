@@ -10,8 +10,8 @@ export const Footer = (props: Props) => {
     const footerBGColor = useColorModeValue('gray.50', 'gray.800')
 
     return (
-        <Flex bg={footerBGColor} py={4} px={8} justifyContent='space-between'>
-            <HStack>
+        <Flex bottom='0' w='full' bg={footerBGColor} py={4} px={10} justifyContent='space-between'>
+            <HStack px='0.5'>
                 <Logo height={30} width={30} />
                 <Text fontSize="sm" color="subtle">
                     &copy; {new Date().getFullYear()} Janhvi Patil

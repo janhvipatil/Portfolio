@@ -1,10 +1,10 @@
-import { ReactNode } from "react"
-import { Box, Flex, HStack, Button, useDisclosure, Stack, useColorModeValue, Text } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { IoCloseOutline, IoMenuOutline } from "react-icons/io5"
-import navStyles from "./navbar.module.css"
-import Link from "next/link"
-import { Logo } from "../Logo/Logo"
+import { ReactNode, useEffect, useState } from 'react'
+import { Box, Flex, HStack, Button, useDisclosure, Stack, useColorModeValue, Text, Center } from '@chakra-ui/react'
+import { ColorModeSwitcher } from './ColorModeSwitcher'
+import { IoCloseOutline, IoMenuOutline } from 'react-icons/io5'
+import Link from 'next/link'
+import { Logo } from '../Logo/Logo'
+import { HiDownload } from 'react-icons/hi'
 
 const Links = [
     {
@@ -21,7 +21,7 @@ const Links = [
     },
     {
         name: "Contact",
-        path: "/Contact",
+        path: "/contact",
     },
 ]
 
@@ -46,17 +46,54 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => {
 
 export const Navbar = () => {
 
+    // on scroll get the users scroll position
+    // if the user has scrolled 20px, change boxShadow to true
+    const [applyBoxShadow, setApplyBoxShadow] = useState(false);
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+            if (window.scrollY > 20) {
+                setApplyBoxShadow(true);
+            } else {
+                setApplyBoxShadow(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const boxShadow = useColorModeValue(
+        "0px 2px 4px rgba(0, 0, 0, 0.2)",
+        "0px 2px 4px rgba(255, 255, 255, 0.1)"
+    );
+    const navBackgroundColor = useColorModeValue(
+        "rgba(255, 255, 255, 0.96)",
+        "rgba(026, 032, 044, 0.96)"
+    )
+
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
-        <div className={navStyles.mobileNav}>
-            <Flex px={10} py={8} zIndex={1}>
+        <div style={{ zIndex: 999 }}>
+            <Flex
+                px={10}
+                py={applyBoxShadow ? '4' : '8'}
+                pos='fixed'
+                w='full'
+                style={{ zIndex: 999 }}
+                bgColor={navBackgroundColor}
+                boxShadow={applyBoxShadow ? boxShadow : "none"}
+                transition="all .2s ease-in-out">
 
                 <Stack spacing={4}>
                     <Button
                         width='fit-content'
                         size='md'
-                        aria-label="Open Menu"
+                        aria-label='Open Menu'
                         display={{ md: 'none' }}
                         onClick={isOpen ? onClose : onOpen}>
                         {isOpen ? <IoCloseOutline /> : <IoMenuOutline />}
@@ -76,7 +113,7 @@ export const Navbar = () => {
                 </Stack>
 
                 <Flex display={{ base: 'none', md: 'flex' }} justifyContent='space-between' width='full'>
-                    <Box
+                    <Center
                         _hover={{
                             transform: 'scale(1.05)',
                             transition: 'all ease-in-out .2s',
@@ -85,7 +122,7 @@ export const Navbar = () => {
                         <Link href={'/'}>
                             <Logo height={40} width={40} />
                         </Link>
-                    </Box>
+                    </Center>
                     <HStack spacing={8} alignItems='center'>
                         <ColorModeSwitcher />
                         <HStack
@@ -98,6 +135,7 @@ export const Navbar = () => {
                             ))}
                         </HStack>
                         <Button
+                            rightIcon={<HiDownload fontSize='1em' />}
                             variant='outline'
                             colorScheme='blue'
                             size='md'>

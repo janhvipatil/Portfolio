@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Layout } from '../components/Layout'
+import { Landing } from '../components/Home'
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <main>
-        <Layout />
+        <Landing />
       </main>
     </div>
   )

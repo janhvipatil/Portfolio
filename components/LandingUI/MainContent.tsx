@@ -1,11 +1,12 @@
-import { Box, Button, Center, Heading, Stack, Text } from '@chakra-ui/react'
+import { Button, Heading, Stack, Text } from '@chakra-ui/react'
+import Link from 'next/link'
 
 type Props = {}
 
 export const MainContent = (props: Props) => {
     return (
-        <Center mt={10} mb={40}>
-            <Stack spacing={10}>
+        <Stack px='12%' justify={'center'} w='full' height='100vh'>
+            <Stack spacing={10} maxW='3xl'>
                 <Stack spacing={2}>
                     <Text fontSize='xl'>Hi <span>👋</span>, I am</Text>
                     <Heading fontSize='8xl'>Janhvi Patil</Heading>
@@ -14,15 +15,16 @@ export const MainContent = (props: Props) => {
                 <Text as='p' fontSize='lg' color='gray.500'>At vero eos et accusamus et iusto odio dignissimos
                     ducimus qui blanditiis praesentium voluptatum deleniti atque
                     corrupti quos dolores et quas molestias excepturi sint occaecati
-                    cupiditate non provident, similique sunt in culpa qui officia deserunt
-                    mollitia animi, id est laborum et dolorum fuga. </Text>
+                    cupiditate non provident.</Text>
                 <Button
                     colorScheme='blue'
                     variant='outline'
                     width='fit-content'>
-                    Get in touch
+                    <Link href={'/contact'}>
+                        Get in touch
+                    </Link>
                 </Button>
             </Stack>
-        </Center>
+        </Stack>
     )
 }

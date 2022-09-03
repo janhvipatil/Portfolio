@@ -1,0 +1,15 @@
+.customFont {
+    font-family: 'Gochi Hand', cursive;
+    src: url('../assets/Gochi_Hand/GochiHand-Regular.ttf');
+    font-weight: 400;
+    font-style: medium;
+    font-size: 20px;
+}
+
+.tiltBox {
+    transform: rotate(10deg) translateX(-40px);
+}
+
+.tiltArrow {
+    transform: rotate(160deg) translateX(300px) translateY(200px);
+}
