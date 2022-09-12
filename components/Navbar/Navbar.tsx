@@ -102,12 +102,22 @@ export const Navbar = () => {
 
                     {isOpen ? (
                         <Box pb={4} display={{ md: 'none' }}>
-                            <Stack as='nav' spacing={4}>
-                                {Links.map(({ name, path }) => (
-                                    <NavLink key={path} path={path}>
-                                        {name}
-                                    </NavLink>
-                                ))}
+                            <Stack as='nav' spacing={4} width='full'>
+                                <Link href='/'>
+                                    <Button onClick={onClose} variant='unstyled'>Home</Button>
+                                </Link>
+                                <Link href='/projects'>
+                                    <Button onClick={onClose} variant='unstyled'>Projects</Button>
+                                </Link>
+                                <Link href='/work'>
+                                    <Button onClick={onClose} variant='unstyled'>Work</Button>
+                                </Link>
+                                <Link href='/about'>
+                                    <Button onClick={onClose} variant='unstyled'>About</Button>
+                                </Link>
+                                <Link href='/contact'>
+                                    <Button onClick={onClose} variant='unstyled'>Contact</Button>
+                                </Link>
                             </Stack>
                         </Box>
                     ) : null}
