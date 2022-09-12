@@ -87,7 +87,8 @@ export const Navbar = () => {
                 style={{ zIndex: 999 }}
                 bgColor={navBackgroundColor}
                 boxShadow={applyBoxShadow ? boxShadow : "none"}
-                transition="all .2s ease-in-out">
+                transition="all .2s ease-in-out"
+                justifyContent='space-between'>
 
                 <Stack spacing={4}>
                     <Button
@@ -143,6 +144,9 @@ export const Navbar = () => {
                         </Button>
                     </HStack>
                 </Flex>
+                <Box>
+                    <ColorModeSwitcher display={{ md: 'none' }} />
+                </Box>
 
             </Flex>
         </div>

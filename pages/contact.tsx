@@ -15,7 +15,7 @@ const Contact = (props: Props) => {
     return (
         <Center w='full' h={{ base: '90vh', md: '92vh' }}>
             <Box textAlign={'center'}>
-                <Stack spacing={6}>
+                <Stack spacing={isMobile ? 10 : 6} mt={isMobile ? 10 : 0}>
                     <Heading as='h2' mb='0' fontSize={{ base: '5xl', md: '8xl' }}>Let&apos;s talk.</Heading>
                     <Text fontSize={{ base: 'md', md: 'lg' }} color={textColor}>Tell me about your project.<br />We can build something amazing together 🤘</Text>
                     <Box alignSelf={'center'} textAlign='left'>
@@ -30,12 +30,11 @@ const Contact = (props: Props) => {
                         </HStack>
                     </Box>
                     {(isMobile) &&
-                        <Box alignContent='center' justifyItems='center'>
+                        <Box w='full'>
                             <ButtonGroup
                                 size='md'
+                                spacing={'3'}
                                 fontSize='lg'
-                                left='0'
-                                pos='absolute'
                                 variant='ghost'>
                                 <HStack spacing={2}>
                                     <IconButton aria-label='Instagram' icon={<AiFillInstagram fontSize="1.5rem" />} />

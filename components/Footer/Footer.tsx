@@ -27,7 +27,7 @@ export const Footer = (props: Props) => {
                             <Text fontSize='xs' color="subtle">with</Text>
                             <TbCoffee fontSize='1em' />
                             <Text fontSize='xs' color="subtle">and </Text>
-                            <HiHeart fontSize='1em' />
+                            <HiHeart fontSize='1em' color='red' />
                         </HStack>
                     </HStack>
                 </Stack>
