@@ -40,5 +40,5 @@ export const Sidebar = (props: Props) => {
                 </Box>
             </Stack>
         )
-    }
+    } else return <></>
 }
