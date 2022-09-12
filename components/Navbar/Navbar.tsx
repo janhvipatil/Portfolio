@@ -88,9 +88,21 @@ export const Navbar = () => {
                 bgColor={navBackgroundColor}
                 boxShadow={applyBoxShadow ? boxShadow : "none"}
                 transition="all .2s ease-in-out"
-                justifyContent='space-between'>
+                justifyContent={{ base: 'space-between' }}>
 
-                <Stack spacing={4}>
+                <Center
+                    display={{ base: 'none', md: 'flex' }}
+                    _hover={{
+                        transform: 'scale(1.05)',
+                        transition: 'all ease-in-out .2s',
+                        cursor: 'pointer'
+                    }}>
+                    <Link href={'/'}>
+                        <Logo height={80} width={80} />
+                    </Link>
+                </Center>
+
+                <Stack spacing={4} w='full'>
                     <Button
                         width='fit-content'
                         size='md'
@@ -101,39 +113,29 @@ export const Navbar = () => {
                     </Button>
 
                     {isOpen ? (
-                        <Box pb={4} display={{ md: 'none' }}>
-                            <Stack as='nav' spacing={4} width='310px'>
-                                <Link href='/'>
-                                    <Button onClick={onClose} variant='ghost'>Home</Button>
+                        <Box pb={4} display={{ md: 'none' }} w='full'>
+                            <Stack as='nav' spacing={4} width='full' align='center' justify={'center'}>
+                                <Link href='/' passHref>
+                                    <Button onClick={onClose} as='a' variant='ghost'>Home</Button>
                                 </Link>
-                                <Link href='/projects'>
-                                    <Button onClick={onClose} variant='ghost'>Projects</Button>
+                                <Link href='/projects' passHref>
+                                    <Button onClick={onClose} as='a' variant='ghost'>Projects</Button>
                                 </Link>
-                                <Link href='/work'>
-                                    <Button onClick={onClose} variant='ghost'>Work</Button>
+                                <Link href='/work' passHref>
+                                    <Button onClick={onClose} as='a' variant='ghost'>Work</Button>
                                 </Link>
-                                <Link href='/about'>
-                                    <Button onClick={onClose} variant='ghost'>About</Button>
+                                <Link href='/about' passHref>
+                                    <Button onClick={onClose} as='a' variant='ghost'>About</Button>
                                 </Link>
-                                <Link href='/contact'>
-                                    <Button onClick={onClose} variant='ghost'>Contact</Button>
+                                <Link href='/contact' passHref>
+                                    <Button onClick={onClose} as='a' variant='ghost'>Contact</Button>
                                 </Link>
                             </Stack>
                         </Box>
                     ) : null}
                 </Stack>
 
-                <Flex display={{ base: 'none', md: 'flex' }} justifyContent='space-between' width='full'>
-                    <Center
-                        _hover={{
-                            transform: 'scale(1.05)',
-                            transition: 'all ease-in-out .2s',
-                            cursor: 'pointer'
-                        }}>
-                        <Link href={'/'}>
-                            <Logo height={40} width={40} />
-                        </Link>
-                    </Center>
+                <Flex display={{ base: 'none', md: 'flex' }} justifyContent='flex-end' width='full'>
                     <HStack spacing={8} alignItems='center'>
                         <ColorModeSwitcher />
                         <HStack
@@ -154,7 +156,7 @@ export const Navbar = () => {
                         </Button>
                     </HStack>
                 </Flex>
-                <Box>
+                <Box pt={1}>
                     <ColorModeSwitcher display={{ md: 'none' }} />
                 </Box>
 

@@ -1,62 +1,32 @@
-import { Flex, Grid, GridItem } from '@chakra-ui/react'
+import { Box, Flex, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 
 type Props = {}
 
 const Projects = (props: Props) => {
+
+    const boxColor = useColorModeValue('white', 'gray.700')
     return (
         <Flex width='full' pl={40} pt={32} pr={28} pb={12}>
-            <Grid
-                h='1000px'
-                width='full'
-                templateRows='repeat(4, 1fr)'
-                templateColumns='repeat(5, 1fr)'
-                gap={4}>
-
-                <GridItem
-                    colSpan={4}
-                    rowSpan={2}
-                    bg='blue.100'
-                    rounded='xl'
-                    boxShadow='md'>
-                </GridItem>
-
-                <GridItem
-                    rowSpan={4}
-                    colSpan={1}
-                    bg='pink.100'
-                    rounded='xl'
-                    boxShadow='md'>
-                </GridItem>
-
-                <GridItem
-                    colSpan={2}
-                    bg='papayawhip'
-                    rounded='xl'
-                    boxShadow='md'>
-                </GridItem>
-
-                <GridItem
-                    colSpan={2}
-                    bg='papayawhip'
-                    rounded='xl'
-                    boxShadow='md'>
-                </GridItem>
-
-                <GridItem
-                    colSpan={2}
-                    bg='papayawhip'
-                    rounded='xl'
-                    boxShadow='md'>
-                </GridItem>
-
-                <GridItem
-                    colSpan={2}
-                    bg='papayawhip'
-                    rounded='xl'
-                    boxShadow='md'>
-                </GridItem>
-            </Grid>
+            <SimpleGrid
+                columns={{ base: 1, md: 4 }}
+                spacing='8'
+                p='10'
+                textAlign='center'
+                rounded='lg'>
+                <Box boxShadow='lg' p='6' rounded='md' bg={boxColor} width='full'>
+                    lg
+                </Box>
+                <Box boxShadow='lg' p='6' rounded='md' bg={boxColor} width='full'>
+                    lg
+                </Box>
+                <Box boxShadow='lg' p='6' rounded='md' bg={boxColor} width='full'>
+                    lg
+                </Box>
+                <Box boxShadow='lg' p='6' rounded='md' bg={boxColor} width='full'>
+                    lg
+                </Box>
+            </SimpleGrid>
         </Flex>
     )
 }
