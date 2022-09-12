@@ -13,10 +13,10 @@ const Contact = (props: Props) => {
     const textColor = useColorModeValue('gray.600', 'gray.500')
 
     return (
-        <Center w='full' h={{ base: '82vh', md: '92vh' }}>
+        <Center w='full' h={{ base: '80vh', md: '92vh' }}>
             <Box textAlign={'center'}>
                 <Stack spacing={isMobile ? 10 : 6}>
-                    <Heading as='h2' mb='0' fontSize={{ base: '5xl', md: '8xl' }}>Let&apos;s talk.</Heading>
+                    <Heading as='h2' mb='0' fontSize={{ base: '6xl', md: '8xl' }}>Let&apos;s talk.</Heading>
                     <Text fontSize={{ base: 'md', md: 'lg' }} color={textColor}>Tell me about your project.<br />We can build something amazing together 🤘</Text>
                     <Box alignSelf={'center'} textAlign='left'>
                         <HStack spacing={4} boxShadow='md' p='4' rounded='md' bg={boxBG}>
