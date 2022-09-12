@@ -102,21 +102,21 @@ export const Navbar = () => {
 
                     {isOpen ? (
                         <Box pb={4} display={{ md: 'none' }}>
-                            <Stack as='nav' spacing={4} width='full'>
+                            <Stack as='nav' spacing={4} width='310px'>
                                 <Link href='/'>
-                                    <Button onClick={onClose} variant='unstyled'>Home</Button>
+                                    <Button onClick={onClose} variant='ghost'>Home</Button>
                                 </Link>
                                 <Link href='/projects'>
-                                    <Button onClick={onClose} variant='unstyled'>Projects</Button>
+                                    <Button onClick={onClose} variant='ghost'>Projects</Button>
                                 </Link>
                                 <Link href='/work'>
-                                    <Button onClick={onClose} variant='unstyled'>Work</Button>
+                                    <Button onClick={onClose} variant='ghost'>Work</Button>
                                 </Link>
                                 <Link href='/about'>
-                                    <Button onClick={onClose} variant='unstyled'>About</Button>
+                                    <Button onClick={onClose} variant='ghost'>About</Button>
                                 </Link>
                                 <Link href='/contact'>
-                                    <Button onClick={onClose} variant='unstyled'>Contact</Button>
+                                    <Button onClick={onClose} variant='ghost'>Contact</Button>
                                 </Link>
                             </Stack>
                         </Box>
