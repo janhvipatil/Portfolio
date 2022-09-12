@@ -1,4 +1,4 @@
-import { Center, Divider, Flex, HStack, Stack, Text, useColorModeValue, useMediaQuery } from "@chakra-ui/react"
+import { Divider, Flex, HStack, Stack, Text, useColorModeValue, useMediaQuery } from "@chakra-ui/react"
 import { Logo } from "../Logo/Logo"
 import { TbCoffee } from 'react-icons/tb'
 import { HiHeart } from 'react-icons/hi'
@@ -12,7 +12,7 @@ export const Footer = (props: Props) => {
 
     if (isMobile) {
         return (
-            <Flex bottom='0' width='full' px={4} py={0}>
+            <Flex bottom='0' width='full' px={4} pb={2}>
                 <Stack width='full'>
                     <Divider />
                     <HStack justifyContent='space-between'>
