@@ -1,21 +1,23 @@
-import { Box, Stack, Text, Heading, HStack, Center, useColorModeValue, Link } from '@chakra-ui/react'
+import { Box, Stack, Text, Heading, HStack, Center, useColorModeValue, Link, ButtonGroup, IconButton, useMediaQuery } from '@chakra-ui/react'
 import React from 'react'
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 import { FiMail } from 'react-icons/fi'
 
 type Props = {}
 
 const Contact = (props: Props) => {
 
+    const [isMobile] = useMediaQuery("(max-width: 768px)")
     const boxBG = useColorModeValue('white', 'gray.700')
     const mailBoxBG = useColorModeValue('gray.100', 'gray.600')
     const textColor = useColorModeValue('gray.600', 'gray.500')
 
     return (
-        <Center w='full' h='92vh'>
+        <Center w='full' h={{ base: '90vh', md: '92vh' }}>
             <Box textAlign={'center'}>
                 <Stack spacing={6}>
-                    <Heading as='h2' mb='0' fontSize='8xl'>Let&apos;s talk.</Heading>
-                    <Text fontSize='lg' color={textColor}>Tell me about your project.<br />We can build something amazing together 🤘</Text>
+                    <Heading as='h2' mb='0' fontSize={{ base: '5xl', md: '8xl' }}>Let&apos;s talk.</Heading>
+                    <Text fontSize={{ base: 'md', md: 'lg' }} color={textColor}>Tell me about your project.<br />We can build something amazing together 🤘</Text>
                     <Box alignSelf={'center'} textAlign='left'>
                         <HStack spacing={4} boxShadow='md' p='4' rounded='md' bg={boxBG}>
                             <Center bg={mailBoxBG} rounded={'md'} boxSize='40px' fontSize={'xl'}>
@@ -27,6 +29,23 @@ const Contact = (props: Props) => {
                             </Stack>
                         </HStack>
                     </Box>
+                    {(isMobile) &&
+                        <Box alignContent='center' justifyItems='center'>
+                            <ButtonGroup
+                                size='md'
+                                fontSize='lg'
+                                left='0'
+                                pos='absolute'
+                                variant='ghost'>
+                                <HStack spacing={2}>
+                                    <IconButton aria-label='Instagram' icon={<AiFillInstagram fontSize="1.5rem" />} />
+                                    <IconButton aria-label='Linkedin' icon={<AiFillLinkedin fontSize="1.5rem" />} />
+                                    <IconButton aria-label='Twitter' icon={<AiOutlineTwitter fontSize="1.5rem" />} />
+                                    <IconButton aria-label='Github' icon={<AiFillGithub fontSize="1.5rem" />} />
+                                </HStack>
+                            </ButtonGroup>
+                        </Box>
+                    }
                 </Stack>
             </Box>
         </Center>

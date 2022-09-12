@@ -10,7 +10,6 @@ import arrowDark from '../assets/curved-arrow-dark.png'
 import arrowLight from '../assets/curved-arrow-light.png'
 import styles from '../styles/CustomStyles.module.css'
 import { CustomHeading } from '../components/CustomHeading/CustomHeading'
-import { TechStack } from '../components/TechStack/TechStack'
 
 const About = () => {
 
@@ -19,7 +18,7 @@ const About = () => {
 
     return (
         <>
-            <Flex px={40} pt='32' pb='32'>
+            <Flex px={40} pt={32} pb={32}>
                 <Box textAlign={'left'}>
                     <HStack spacing={4} align='flex-start'>
                         <Stack spacing={6}>
@@ -114,11 +113,6 @@ const About = () => {
                             </Stack>
                         </Box>
                     </HStack>
-                </Box>
-            </Flex>
-            <Flex>
-                <Box pl={40} pb={32}>
-                    <TechStack />
                 </Box>
             </Flex>
         </>
