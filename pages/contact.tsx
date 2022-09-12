@@ -13,9 +13,9 @@ const Contact = (props: Props) => {
     const textColor = useColorModeValue('gray.600', 'gray.500')
 
     return (
-        <Center w='full' h={{ base: '90vh', md: '92vh' }}>
+        <Center w='full' h={{ base: '88vh', md: '92vh' }}>
             <Box textAlign={'center'}>
-                <Stack spacing={isMobile ? 10 : 6} mt={isMobile ? 10 : 0}>
+                <Stack spacing={isMobile ? 10 : 6} mt={isMobile ? 16 : 0}>
                     <Heading as='h2' mb='0' fontSize={{ base: '5xl', md: '8xl' }}>Let&apos;s talk.</Heading>
                     <Text fontSize={{ base: 'md', md: 'lg' }} color={textColor}>Tell me about your project.<br />We can build something amazing together 🤘</Text>
                     <Box alignSelf={'center'} textAlign='left'>
