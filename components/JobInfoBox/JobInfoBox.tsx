@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, GridItem, Heading, HStack, IconButton, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Box, Divider, Grid, GridItem, Heading, HStack, IconButton, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
@@ -78,7 +78,7 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
             <Box display={{ base: 'flex', md: 'none' }}>
                 <Stack spacing={4}>
                     <Stack>
-                        <Box>
+                        <Box py={2}>
                             <Image src={logo} alt='company logo' width={logoWidth} height={logoHeight} />
                         </Box>
                         <HStack>

@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Stack, useColorModeValue, Text, SimpleGrid, Button } from '@chakra-ui/react'
+import { Box, Heading, HStack, Stack, useColorModeValue, Text, SimpleGrid, Button, ButtonGroup } from '@chakra-ui/react'
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { GiAcorn } from 'react-icons/gi'
@@ -53,10 +53,10 @@ export const ProjectBox = ({ image, heading, data, tech1, tech2, tech3, tech4 }:
                                 </HStack>
                             </SimpleGrid>
                         </Stack>
-                        <HStack spacing={4}>
+                        <ButtonGroup>
                             <Button colorScheme='blue' variant='outline'>View Project</Button>
-                            <Button leftIcon={<BiLink />} shadow='base'>Github Repo</Button>
-                        </HStack>
+                            <Button leftIcon={<BiLink />} shadow='base' colorScheme='gray' variant='outline'>Github Repo</Button>
+                        </ButtonGroup>
                     </Stack>
                 </Box>
             </HStack>
@@ -91,10 +91,10 @@ export const ProjectBox = ({ image, heading, data, tech1, tech2, tech3, tech4 }:
                                 </HStack>
                             </SimpleGrid>
                         </Stack>
-                        <HStack spacing={4}>
+                        <ButtonGroup>
                             <Button size='xs' colorScheme='blue' variant='outline'>View Project</Button>
-                            <Button size='xs'>Github Repo</Button>
-                        </HStack>
+                            <Button size='xs' leftIcon={<BiLink />} shadow='base' colorScheme='gray' variant='outline'>Github Repo</Button>
+                        </ButtonGroup>
                     </Stack>
                 </Box>
             </Stack>
