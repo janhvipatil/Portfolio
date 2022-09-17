@@ -41,7 +41,7 @@ const Contact = (props: Props) => {
                             <Stack display={{ base: 'none', md: 'flex' }}>
                                 <Box className={styles.tiltBox2} width='250px'>
                                     <Text className={styles.customFont} color={scribbleColor}>
-                                        Don&apos;t be a stranger, hit me up at any of my socials to connect.
+                                        Don&apos;t be a stranger, hit me up on any of my socials to connect.
                                     </Text>
                                 </Box>
                                 <Box className={styles.tiltArrow2}>
