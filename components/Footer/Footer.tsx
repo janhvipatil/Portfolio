@@ -1,4 +1,4 @@
-import { Divider, Flex, HStack, Stack, Text, useColorModeValue, useMediaQuery } from "@chakra-ui/react"
+import { Divider, Flex, HStack, Stack, Text, useColorModeValue } from "@chakra-ui/react"
 import { Logo } from "../Logo/Logo"
 import { TbCoffee } from 'react-icons/tb'
 import { HiHeart } from 'react-icons/hi'
@@ -7,12 +7,11 @@ type Props = {}
 
 export const Footer = (props: Props) => {
 
-    const [isMobile] = useMediaQuery("(max-width: 768px)")
     const footerBGColor = useColorModeValue('gray.50', 'gray.800')
 
-    if (isMobile) {
-        return (
-            <Flex bottom='0' width='full' px={4} pb={2}>
+    return (
+        <>
+            <Flex bottom='0' width='full' px={4} pb={2} display={{ base: 'flex', md: 'none' }}>
                 <Stack width='full'>
                     <Divider />
                     <HStack justifyContent='space-between'>
@@ -32,10 +31,7 @@ export const Footer = (props: Props) => {
                     </HStack>
                 </Stack>
             </Flex>
-        )
-    } else
-        return (
-            <Flex bottom='0' w='full' bg={footerBGColor} py={4} px={10} justifyContent='space-between'>
+            <Flex bottom='0' w='full' bg={footerBGColor} py={4} px={10} justifyContent='space-between' display={{ base: 'none', md: 'flex' }}>
                 <HStack px='0.5'>
                     <Logo height={30} width={30} />
                     <Text fontSize='sm' color='subtle'>
@@ -50,5 +46,6 @@ export const Footer = (props: Props) => {
                     <HiHeart fontSize='1.1em' />
                 </HStack>
             </Flex>
-        )
+        </>
+    )
 }

@@ -1,16 +1,16 @@
 import { Box, Text, useColorModeValue } from "@chakra-ui/react"
 
 type Props = {
-    fontSize: string,
     headingText: string,
     boxColor: string,
     chars: number
 }
 
-export const CustomHeading = ({ fontSize, headingText, boxColor, chars }: Props) => {
+export const CustomHeading = ({ headingText, boxColor, chars }: Props) => {
 
     const words = headingText.split(' ')
     const color = useColorModeValue('black', 'black')
+
     return (
         <Box>
             <Box display={'inline-block'} pos='relative'>
@@ -19,7 +19,7 @@ export const CustomHeading = ({ fontSize, headingText, boxColor, chars }: Props)
                     zIndex='10'
                     pos='relative'
                     fontWeight={'bold'}
-                    fontSize={fontSize} >{words.map((w, index) => {
+                    fontSize={{ base: '28px', md: '36px' }} >{words.map((w, index) => {
                         if (index === words.length - 1) {
                             return <Text as='span' color={color}>
                                 {w}
@@ -34,7 +34,7 @@ export const CustomHeading = ({ fontSize, headingText, boxColor, chars }: Props)
                     as='span'
                     pos='absolute'
                     zIndex={'0'}
-                    fontSize={fontSize}
+                    fontSize={{ base: '28px', md: '36px' }}
                     bg={boxColor}
                     height='30px'
                     width={`${chars}ch`}
