@@ -4,6 +4,7 @@ import nicelogo from '../assets/company logos/nice-logo.jpg'
 import myassetbuddylogo from '../assets/company logos/myassetbuddy-logo.jpg'
 import medbuyerlogo from '../assets/company logos/medbuyer-logo.jpg'
 import { JobInfoBox } from '../components/JobInfoBox/JobInfoBox'
+import { Footer } from '../components/Footer'
 
 
 type Props = {}
@@ -87,6 +88,8 @@ const Work = (props: Props) => {
                     />
                 </Stack>
             </Center>
+
+            <Footer />
         </>
     )
 }

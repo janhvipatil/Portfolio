@@ -2,6 +2,7 @@ import { Box, Heading, HStack, Stack, useColorModeValue, Text, SimpleGrid, Butto
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { GiAcorn } from 'react-icons/gi'
+import { BiLink } from 'react-icons/bi'
 
 interface Props {
     image: StaticImageData,
@@ -15,10 +16,12 @@ interface Props {
 
 export const ProjectBox = ({ image, heading, data, tech1, tech2, tech3, tech4 }: Props) => {
 
-    const boxColor = useColorModeValue('white', 'gray.700')
+    const boxColorMD = useColorModeValue('white', 'linear(to-tr, gray.700, blackAlpha.700)')
+    const boxColorBase = useColorModeValue('white', 'linear(to-b, gray.700, blackAlpha.700)')
+
 
     return (
-        <Box boxShadow='lg' p={{ base: 6, md: 10 }} rounded='lg' bg={boxColor} width='full'>
+        <Box boxShadow='lg' p={{ base: 6, md: 10 }} rounded='lg' bgGradient={{ base: boxColorBase, md: boxColorMD }} width='full'>
             <HStack spacing={10} display={{ base: 'none', md: 'flex' }}>
                 <Box style={{ borderRadius: '10px', overflow: 'hidden' }}>
                     <Image src={image}
@@ -51,8 +54,8 @@ export const ProjectBox = ({ image, heading, data, tech1, tech2, tech3, tech4 }:
                             </SimpleGrid>
                         </Stack>
                         <HStack spacing={4}>
-                            <Button>View Project</Button>
-                            <Button>Github Repo</Button>
+                            <Button colorScheme='blue' variant='outline'>View Project</Button>
+                            <Button leftIcon={<BiLink />} shadow='base'>Github Repo</Button>
                         </HStack>
                     </Stack>
                 </Box>
@@ -89,7 +92,7 @@ export const ProjectBox = ({ image, heading, data, tech1, tech2, tech3, tech4 }:
                             </SimpleGrid>
                         </Stack>
                         <HStack spacing={4}>
-                            <Button size='xs'>View Project</Button>
+                            <Button size='xs' colorScheme='blue' variant='outline'>View Project</Button>
                             <Button size='xs'>Github Repo</Button>
                         </HStack>
                     </Stack>

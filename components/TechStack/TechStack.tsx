@@ -23,31 +23,30 @@ import Image, { StaticImageData } from 'next/image'
 type TechStack = {
     logo: StaticImageData,
     label: string,
-    color: string
 }
 
 const techStack: TechStack[] = []
 
 const myassetbuddyTechStack: TechStack[] = [
-    { logo: typescript, label: 'TypeScript', color: 'linkedin' },
-    { logo: javascript, label: 'JavaScript', color: 'yellow' },
-    { logo: react, label: 'React', color: 'cyan' },
-    { logo: aws, label: 'AWS', color: 'orange' },
-    { logo: frappe, label: 'Frappe', color: 'blue' },
-    { logo: python, label: 'Python', color: 'blue' },
-    { logo: postman, label: 'Postman', color: 'orange' },
-    { logo: git, label: 'Git', color: 'orange' },
-    { logo: linear, label: 'Linear', color: 'purple' },
-    { logo: firebase, label: 'Firebase', color: 'yellow' },
-    { logo: mongodb, label: 'MongoDB', color: 'green' }
+    { logo: typescript, label: 'TypeScript' },
+    { logo: javascript, label: 'JavaScript' },
+    { logo: react, label: 'React' },
+    { logo: aws, label: 'AWS' },
+    { logo: frappe, label: 'Frappe' },
+    { logo: python, label: 'Python' },
+    { logo: postman, label: 'Postman' },
+    { logo: git, label: 'Git' },
+    { logo: linear, label: 'Linear' },
+    { logo: firebase, label: 'Firebase' },
+    { logo: mongodb, label: 'MongoDB' }
 ]
 
 const niceTechStack: TechStack[] = [
-    { logo: aws, label: 'AWS', color: 'orange' },
-    { logo: python, label: 'Python', color: 'blue' },
-    { logo: postman, label: 'Postman', color: 'orange' },
-    { logo: opsgenie, label: 'OpsGenie', color: 'linkedin' },
-    { logo: jira, label: 'Jira', color: 'blue' },
+    { logo: aws, label: 'AWS' },
+    { logo: python, label: 'Python' },
+    { logo: postman, label: 'Postman' },
+    { logo: opsgenie, label: 'OpsGenie' },
+    { logo: jira, label: 'Jira' },
 ]
 
 export const TechStack = () => {
@@ -56,12 +55,10 @@ export const TechStack = () => {
             <SimpleGrid columns={{ base: 3, md: 5 }} spacing={{ base: 2, md: 3 }}>
                 {techStack.map((s: TechStack) =>
                     <Button
-                        size={{ base: 'xs', md: 'sm' }}
+                        textAlign='left'
+                        size={{ base: 'xs', md: 'md' }}
                         key={s.label}
                         variant='outline'
-                        rounded='2xl'
-                        boxShadow='base'
-                        colorScheme={s.color}
                         leftIcon={s.label === 'NextJS' ? <SiNextdotjs /> : <Image src={s.logo} alt={`${s.label} logo`} height='16px' width='16px' />}>
                         {s.label}
                     </Button>
@@ -77,13 +74,11 @@ export const MyAssetBuddyTechStack = () => {
             <SimpleGrid columns={{ base: 3, md: 5 }} spacing={{ base: 2, md: 3 }}>
                 {myassetbuddyTechStack.map((s: TechStack) =>
                     <Button
-                        size={{ base: 'xs', md: 'sm' }}
+                        textAlign='left'
+                        size={{ base: 'xs', md: 'md' }}
                         key={s.label}
                         variant='outline'
-                        rounded='2xl'
-                        boxShadow='base'
-                        colorScheme={s.color}
-                        leftIcon={<Image src={s.logo} alt={`${s.label} logo`} height='16px' width='16px' />}>
+                        leftIcon={<Image src={s.logo} alt={`${s.label} logo`} height='18px' width='18px' />}>
                         {s.label}
                     </Button>
                 )}
@@ -98,12 +93,10 @@ export const NiceTechStack = () => {
             <SimpleGrid columns={{ base: 3, md: 5 }} spacing={{ base: 2, md: 3 }}>
                 {niceTechStack.map((s: TechStack) =>
                     <Button
-                        size={{ base: 'xs', md: 'sm' }}
+                        textAlign='left'
+                        size={{ base: 'xs', md: 'md' }}
                         key={s.label}
                         variant='outline'
-                        rounded='2xl'
-                        boxShadow='base'
-                        colorScheme={s.color}
                         leftIcon={<Image src={s.logo} alt={`${s.label} logo`} height='16px' width='16px' />}>
                         {s.label}
                     </Button>

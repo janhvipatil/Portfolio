@@ -10,6 +10,7 @@ import arrowDark from '../assets/curved-arrow-dark.png'
 import arrowLight from '../assets/curved-arrow-light.png'
 import styles from '../styles/CustomStyles.module.css'
 import { CustomHeading } from '../components/CustomHeading/CustomHeading'
+import { Footer } from '../components/Footer'
 
 const About = () => {
 
@@ -128,6 +129,8 @@ const About = () => {
                     </Stack>
                 </Box>
             </Stack>
+
+            <Footer />
         </>
     )
 }
