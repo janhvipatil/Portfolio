@@ -13,8 +13,12 @@ const Work = (props: Props) => {
     return (
         <>
 
-            <Center pl={56} pt={44} pr={52} pb={12}>
-                <Stack spacing={28}>
+            <Center
+                pl={{ base: 10, md: 56 }}
+                pt={{ base: 12, md: 44 }}
+                pr={{ base: 10, md: 52 }}
+                pb={12}>
+                <Stack spacing={{ base: 16, md: 28 }}>
 
                     <JobInfoBox
                         logo={myassetbuddylogo}

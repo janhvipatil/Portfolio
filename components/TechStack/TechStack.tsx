@@ -53,9 +53,10 @@ const niceTechStack: TechStack[] = [
 export const TechStack = () => {
     return (
         <Stack spacing={8}>
-            <SimpleGrid columns={5} spacing={3}>
+            <SimpleGrid columns={{ base: 3, md: 5 }} spacing={{ base: 2, md: 3 }}>
                 {techStack.map((s: TechStack) =>
                     <Button
+                        size={{ base: 'xs', md: 'sm' }}
                         key={s.label}
                         variant='outline'
                         rounded='2xl'
@@ -73,9 +74,10 @@ export const TechStack = () => {
 export const MyAssetBuddyTechStack = () => {
     return (
         <Stack spacing={8}>
-            <SimpleGrid columns={5} spacing={3}>
+            <SimpleGrid columns={{ base: 3, md: 5 }} spacing={{ base: 2, md: 3 }}>
                 {myassetbuddyTechStack.map((s: TechStack) =>
                     <Button
+                        size={{ base: 'xs', md: 'sm' }}
                         key={s.label}
                         variant='outline'
                         rounded='2xl'
@@ -93,9 +95,10 @@ export const MyAssetBuddyTechStack = () => {
 export const NiceTechStack = () => {
     return (
         <Stack spacing={8}>
-            <SimpleGrid columns={5} spacing={3}>
+            <SimpleGrid columns={{ base: 3, md: 5 }} spacing={{ base: 2, md: 3 }}>
                 {niceTechStack.map((s: TechStack) =>
                     <Button
+                        size={{ base: 'xs', md: 'sm' }}
                         key={s.label}
                         variant='outline'
                         rounded='2xl'

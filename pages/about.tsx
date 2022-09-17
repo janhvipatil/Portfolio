@@ -21,7 +21,7 @@ const About = () => {
             <Flex
                 pl={{ base: 8, md: 24, lg: 40 }}
                 pr={{ base: 8, md: 12, lg: 40 }}
-                pt={{ base: 24, md: 32 }} pb={{ base: 12, md: 32 }}>
+                pt={{ base: 28, md: 32 }} pb={{ base: 12, md: 32 }}>
                 <HStack spacing={4} align='flex-start' flexDirection={{ base: 'column', md: 'row' }}>
                     <Stack spacing={{ base: 2, md: 6 }}>
                         <Box display={{ base: 'none', md: 'block' }}>
