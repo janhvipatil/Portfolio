@@ -3,9 +3,9 @@ import React from 'react'
 import { MdOutlineAlternateEmail, MdOutlineCake } from 'react-icons/md'
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import Image from 'next/image'
-import workspaceLight from '../assets/workspace-light.jpg'
-import workspaceDark from '../assets/workspace-dark.jpg'
-import avatar from '../assets/avatar.png'
+import workspaceLight from '../assets/about/workspace-light.jpg'
+import workspaceDark from '../assets/about/workspace-dark.jpg'
+import avatar from '../assets/about/avatar.png'
 import arrowDark from '../assets/curved-arrow-dark.png'
 import arrowLight from '../assets/curved-arrow-light.png'
 import styles from '../styles/CustomStyles.module.css'
@@ -45,10 +45,10 @@ const About = () => {
                                 </Text>
                             </Center>
                         </Stack>
-                        <Stack spacing={{ base: 10, md: 6 }} direction={{ base: 'column-reverse', md: 'column' }}>
+                        <Stack spacing={{ base: 16, md: 6 }} direction={{ base: 'column-reverse', md: 'column' }}>
                             <Stack spacing={{ base: 4, md: 4 }} width={{ base: '100%', md: '70%' }}>
                                 <Stack spacing={2}>
-                                    <Text as='h3' fontWeight='semibold' fontSize='lg'>Sed ut perspiciatis unde</Text>
+                                    <Heading as='h3' fontWeight={{ base: 'bold', md: 'semibold' }} fontSize={{ base: '2xl', md: 'lg' }}>Sed ut perspiciatis unde</Heading>
                                     <Text as='p'>
                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -57,7 +57,7 @@ const About = () => {
                                     </Text>
                                 </Stack>
                                 <Stack spacing={2}>
-                                    <Text as='h3' fontWeight='semibold' fontSize='lg'>Nemo enim ipsam voluptatem quia voluptas sit</Text>
+                                    <Heading as='h3' fontWeight={{ base: 'bold', md: 'semibold' }} fontSize={{ base: '2xl', md: 'lg' }}>Nemo enim ipsam voluptatem quia voluptas sit</Heading>
                                     <Text as='p'>
                                         Nemo enim ipsam voluptatem quia voluptas sit
                                         aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
@@ -74,11 +74,11 @@ const About = () => {
                                 </Stack>
                             </Stack>
                             <Box width={{ base: '100%', md: '60%' }} px={{ base: 16, md: 0 }}>
-                                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 1, md: 2 }}>
+                                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={2}>
                                     <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.2em' /><Text color='gray.500' fontSize={{ base: 'sm' }}>JanhviPatil</Text></HStack>
                                     <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.2em' /><Text color='gray.500' fontSize={{ base: 'sm' }}>Hyderabad, India.</Text></HStack>
                                     <HStack spacing={2}><MdOutlineCake fontSize='1.2em' /><Text color='gray.500' fontSize={{ base: 'sm' }}>24 Feb 1998, 24 y.o.</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineMail size={'1.2em'} /><Text color='gray.500' fontSize={{ base: 'sm' }}>janhvipatil716@gmail.com</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineMail size={'1.2em'} /><Text color='gray.500' fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
                                 </SimpleGrid>
                             </Box>
                         </Stack>
