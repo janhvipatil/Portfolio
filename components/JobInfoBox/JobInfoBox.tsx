@@ -102,17 +102,23 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                         </HStack>
                     </Stack>
                     <Divider />
-                    <Text>
-                        {jobdetails}
-                    </Text>
-                    {jobdetails2 &&
-                        <Text>
-                            {jobdetails2}
-                        </Text>
-                    }
-                    {companyName === 'My Asset Buddy' ?
-                        <MyAssetBuddyTechStack /> : <NiceTechStack />
-                    }
+                    <Stack spacing={6}>
+                        <Stack>
+                            <Text>
+                                {jobdetails}
+                            </Text>
+                            {jobdetails2 &&
+                                <Text>
+                                    {jobdetails2}
+                                </Text>
+                            }
+                        </Stack>
+                        <Box>
+                            {companyName === 'My Asset Buddy' ?
+                                <MyAssetBuddyTechStack /> : <NiceTechStack />
+                            }
+                        </Box>
+                    </Stack>
                 </Stack>
             </Box>
         </>
