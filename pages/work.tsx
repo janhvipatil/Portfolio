@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Stack, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, Heading, Stack, useColorModeValue, Text } from '@chakra-ui/react'
 import React from 'react'
 import nicelogo from '../assets/company logos/nice-logo.png'
 import myassetbuddylogo from '../assets/company logos/myassetbuddy-logo.png'
@@ -18,14 +18,18 @@ const Work = (props: Props) => {
             <Flex w='full'
                 pl={{ base: 10, md: 56 }}
                 pt={{ base: 28, md: 44 }}
-                pr={{ base: 10, md: 52 }} pb={12}>
+                pr={{ base: 10, md: 52 }}
+                pb={{ base: 12, md: 32 }}>
 
-                <Stack spacing={0}>
-                    <Box>
+                <Stack spacing={{ base: 0, md: 16 }}>
+                    <Stack spacing={4}>
                         <Heading fontSize={{ base: '4xl', md: '6xl' }}
                             bgGradient={headingColor}
                             bgClip='text'>My Professional journey so far...</Heading>
-                    </Box>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </Text>
+                    </Stack>
 
                     <Stack spacing={{ base: 16, md: 28 }}>
 

@@ -16,13 +16,16 @@ const About = () => {
 
     const workspace = useColorModeValue(workspaceLight, workspaceDark)
     const arrow = useColorModeValue(arrowLight, arrowDark)
+    const headingColor = useColorModeValue('linear(to-r, blue.400, pink.600)', 'linear(to-r, blue.200, pink.600)')
+    const textColor = useColorModeValue('linear(to-r, pink.400, pink.800)', 'linear(to-r, blue.400, blue.600)')
 
     return (
         <>
             <Flex
                 pl={{ base: 8, md: 24, lg: 40 }}
                 pr={{ base: 8, md: 12, lg: 40 }}
-                pt={{ base: 28, md: 32 }} pb={{ base: 12, md: 32 }}>
+                pt={{ base: 28, md: 32 }}
+                pb={{ base: 12, md: 32 }}>
                 <HStack spacing={4} align='flex-start' flexDirection={{ base: 'column', md: 'row' }}>
                     <Stack spacing={{ base: 2, md: 6 }}>
                         <Box display={{ base: 'none', md: 'block' }}>
@@ -49,7 +52,12 @@ const About = () => {
                         <Stack spacing={{ base: 16, md: 6 }} direction={{ base: 'column-reverse', md: 'column' }}>
                             <Stack spacing={{ base: 4, md: 4 }} width={{ base: '100%', md: '70%' }}>
                                 <Stack spacing={2}>
-                                    <Heading as='h3' fontWeight={{ base: 'bold', md: 'semibold' }} fontSize={{ base: '2xl', md: 'lg' }}>Sed ut perspiciatis unde</Heading>
+                                    <Heading as='h3'
+                                        fontWeight={{ base: 'bold', md: 'semibold' }}
+                                        fontSize={{ base: '2xl', md: 'lg' }}
+                                        bgGradient={headingColor}
+                                        bgClip='text'>
+                                        Sed ut perspiciatis unde</Heading>
                                     <Text as='p'>
                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -58,7 +66,12 @@ const About = () => {
                                     </Text>
                                 </Stack>
                                 <Stack spacing={2}>
-                                    <Heading as='h3' fontWeight={{ base: 'bold', md: 'semibold' }} fontSize={{ base: '2xl', md: 'lg' }}>Nemo enim ipsam voluptatem quia voluptas sit</Heading>
+                                    <Heading as='h3'
+                                        fontWeight={{ base: 'bold', md: 'semibold' }}
+                                        fontSize={{ base: '2xl', md: 'lg' }}
+                                        bgGradient={headingColor}
+                                        bgClip='text'>
+                                        Nemo enim ipsam voluptatem quia voluptas sit</Heading>
                                     <Text as='p'>
                                         Nemo enim ipsam voluptatem quia voluptas sit
                                         aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
@@ -76,10 +89,10 @@ const About = () => {
                             </Stack>
                             <Box width={{ base: '100%', md: '60%' }} px={{ base: 16, md: 0 }}>
                                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={2}>
-                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.2em' /><Text color='gray.500' fontSize={{ base: 'sm' }}>JanhviPatil</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.2em' /><Text color='gray.500' fontSize={{ base: 'sm' }}>Hyderabad, India.</Text></HStack>
-                                    <HStack spacing={2}><MdOutlineCake fontSize='1.2em' /><Text color='gray.500' fontSize={{ base: 'sm' }}>24 Feb 1998, 24 y.o.</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineMail size={'1.2em'} /><Text color='gray.500' fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
+                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.2em' /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>JanhviPatil</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.2em' /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>Hyderabad, India.</Text></HStack>
+                                    <HStack spacing={2}><MdOutlineCake fontSize='1.2em' /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>24 Feb 1998, 24 y.o.</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineMail size={'1.2em'} /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
                                 </SimpleGrid>
                             </Box>
                         </Stack>
@@ -104,14 +117,15 @@ const About = () => {
                 </HStack>
             </Flex>
             <Stack spacing={{ base: 8, md: 16 }} pl={{ base: 8, md: 20, lg: 40 }} pr={{ base: 8, md: 20, lg: 40 }} pb={{ base: 16, md: 24 }} direction={{ base: 'column', md: 'row' }}>
-                <Box style={{ borderRadius: '10px', overflow: 'hidden' }} w={{ base: '100%', md: '50%' }}>
+                <Box style={{ borderRadius: '10px', overflow: 'hidden' }} w={{ base: '100%', md: '60%' }}>
                     <Image src={workspace}
                         alt='my workspace'
                         objectFit='cover' />
                 </Box>
                 <Box width={{ base: '100%', md: '60%' }}>
-                    <Stack spacing={2}>
-                        <Heading>sed quia non numquam eius modi tempora incidunt</Heading>
+                    <Stack spacing={{ base: 2, md: 4 }}>
+                        <Heading bgGradient={headingColor}
+                            bgClip='text'>sed quia non numquam eius modi tempora incidunt</Heading>
                         <Text as='p'>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

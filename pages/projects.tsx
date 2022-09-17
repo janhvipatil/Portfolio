@@ -18,7 +18,8 @@ const Projects = (props: Props) => {
             <Flex width='full'
                 pl={{ base: 2, md: 40 }}
                 pt={{ base: 28, md: 44 }}
-                pr={{ base: 2, md: 24 }} pb={12}>
+                pr={{ base: 2, md: 24 }}
+                pb={{ base: 12, md: 32 }}>
 
                 <Stack px={{ base: 8, md: 24 }} spacing={4}>
                     <Heading
