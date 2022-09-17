@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Landing } from '../components/Home'
+import logo from '../assets/logo-light.svg'
 
 const Home: NextPage = () => {
   return (
@@ -14,14 +15,14 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Janhvi Patil" />
         <meta property="og:description" content="personal portfolio app" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content={logo} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="janhvipatil.me" />
         <meta property="twitter:url" content="https://janhvipatil.me" />
         <meta name="twitter:title" content="Janhvi Patil" />
         <meta name="twitter:description" content="personal portfolio app" />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:image" content={logo} />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
