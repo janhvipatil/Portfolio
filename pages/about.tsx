@@ -54,9 +54,7 @@ const About = () => {
                                 <Stack spacing={2}>
                                     <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
-                                        fontSize={{ base: '2xl', md: 'lg' }}
-                                        bgGradient={headingColor}
-                                        bgClip='text'>
+                                        fontSize={{ base: '2xl', md: 'lg' }}>
                                         Sed ut perspiciatis unde</Heading>
                                     <Text as='p'>
                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -68,9 +66,7 @@ const About = () => {
                                 <Stack spacing={2}>
                                     <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
-                                        fontSize={{ base: '2xl', md: 'lg' }}
-                                        bgGradient={headingColor}
-                                        bgClip='text'>
+                                        fontSize={{ base: '2xl', md: 'lg' }}>
                                         Nemo enim ipsam voluptatem quia voluptas sit</Heading>
                                     <Text as='p'>
                                         Nemo enim ipsam voluptatem quia voluptas sit
