@@ -97,8 +97,10 @@ export const Navbar = () => {
                         transition: 'all ease-in-out .2s',
                         cursor: 'pointer'
                     }}>
-                    <Link href={'/'}>
-                        <Logo height={80} width={80} />
+                    <Link href={'/'} passHref>
+                        <Box>
+                            <Logo height={80} width={80} />
+                        </Box>
                     </Link>
                 </Center>
 

@@ -16,8 +16,7 @@ const About = () => {
 
     const workspace = useColorModeValue(workspaceLight, workspaceDark)
     const arrow = useColorModeValue(arrowLight, arrowDark)
-    const headingColor = useColorModeValue('linear(to-r, blue.400, pink.600)', 'linear(to-r, blue.200, pink.600)')
-    const textColor = useColorModeValue('linear(to-r, pink.400, pink.800)', 'linear(to-r, blue.400, blue.600)')
+    const textColor = useColorModeValue('gray.500', 'gray.400')
 
     return (
         <>
@@ -85,10 +84,10 @@ const About = () => {
                             </Stack>
                             <Box width={{ base: '100%', md: '60%' }} px={{ base: 16, md: 0 }}>
                                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={2}>
-                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.2em' /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>JanhviPatil</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.2em' /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>Hyderabad, India.</Text></HStack>
-                                    <HStack spacing={2}><MdOutlineCake fontSize='1.2em' /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>24 Feb 1998, 24 y.o.</Text></HStack>
-                                    <HStack spacing={2}><HiOutlineMail size={'1.2em'} /><Text bgGradient={textColor} bgClip='text' fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
+                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.2em' /><Text color={textColor} fontSize={{ base: 'sm' }}>JanhviPatil</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.2em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Hyderabad, India.</Text></HStack>
+                                    <HStack spacing={2}><MdOutlineCake fontSize='1.2em' /><Text color={textColor} fontSize={{ base: 'sm' }}>24 Feb 1998, 24 y.o.</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineMail size={'1.2em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
                                 </SimpleGrid>
                             </Box>
                         </Stack>
@@ -120,7 +119,7 @@ const About = () => {
                 </Box>
                 <Box width={{ base: '100%', md: '60%' }}>
                     <Stack spacing={{ base: 2, md: 4 }}>
-                        <Heading bgGradient={headingColor}
+                        <Heading bgGradient='linear(to-r, pink.200, blue.500)'
                             bgClip='text'>sed quia non numquam eius modi tempora incidunt</Heading>
                         <Text as='p'>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

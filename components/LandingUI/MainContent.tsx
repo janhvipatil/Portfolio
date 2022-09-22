@@ -6,6 +6,7 @@ type Props = {}
 
 export const MainContent = (props: Props) => {
 
+    console.log("Oh hello there stranger 👀, fancy seeing you here ❤️, you can check out the source code at: https://github.com/janhvipatil/portfolio")
     const headingColor = useColorModeValue('linear(to-r, pink.300, blue.600)', 'linear(to-r, pink.200, blue.700)')
 
     return (
