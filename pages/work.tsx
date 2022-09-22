@@ -36,7 +36,7 @@ const Work = (props: Props) => {
                         <JobInfoBox
                             logo={myassetbuddylogo}
                             logoWidth='150px'
-                            logoHeight='60px'
+                            logoHeight='55px'
                             mt='0'
                             dates='Feb 2022 - Current'
                             position='Product Manager and Software Engineer'
