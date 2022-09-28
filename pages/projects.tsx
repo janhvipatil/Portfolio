@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, HStack, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, Heading, HStack, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 import dummyImage from '../assets/projects/dummyImage.jpg'
 import { Footer } from '../components/Footer'
@@ -11,8 +11,7 @@ type Props = {}
 
 const Projects = (props: Props) => {
 
-    const headingColor = useColorModeValue('linear(to-r, blue.300, yellow.400)', 'linear(to-r, blue.200, yellow.600)')
-
+    const headingColor = 'linear(to-r, blue.200, pink.200)'
     return (
         <>
             <Flex width='full'

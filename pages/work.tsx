@@ -11,8 +11,7 @@ type Props = {}
 
 const Work = (props: Props) => {
 
-    const headingColor = useColorModeValue('linear(to-r, blue.300, pink.400)', 'linear(to-r, blue.200, pink.600)')
-
+    const headingColor = 'linear(to-r, blue.200, pink.200)'
     return (
         <>
             <Flex w='full'
@@ -22,10 +21,10 @@ const Work = (props: Props) => {
                 pb={{ base: 12, md: 32 }}>
 
                 <Stack spacing={{ base: 0, md: 16 }}>
-                    <Stack spacing={4}>
+                    <Stack spacing={4} mb={{ base: 0, md: 12 }}>
                         <Heading fontSize={{ base: '4xl', md: '6xl' }}
                             bgGradient={headingColor}
-                            bgClip='text'>My Professional journey so far...</Heading>
+                            bgClip='text'>My professional journey so far...</Heading>
                         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </Text>
@@ -37,7 +36,7 @@ const Work = (props: Props) => {
                             logo={myassetbuddylogo}
                             logoWidth='150px'
                             logoHeight='55px'
-                            mt='0'
+                            mt='1'
                             dates='Feb 2022 - Current'
                             position='Product Manager and Software Engineer'
                             companyName='My Asset Buddy'
@@ -61,7 +60,7 @@ const Work = (props: Props) => {
                             logo={medbuyerlogo}
                             logoWidth='160px'
                             logoHeight='35px'
-                            mt='1'
+                            mt='2'
                             dates='Nov 2021 - Feb 2022'
                             position='Software Developer'
                             companyName='MedBuyer'
@@ -82,7 +81,7 @@ const Work = (props: Props) => {
                             logo={nicelogo}
                             logoWidth='110px'
                             logoHeight='35px'
-                            mt='2'
+                            mt='3'
                             dates='Aug 2020 - Dec 2021'
                             position='Associate Application Operations Engineer'
                             companyName='NICE Interactive Solutions India'

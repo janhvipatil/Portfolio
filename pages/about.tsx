@@ -119,8 +119,8 @@ const About = () => {
                 </Box>
                 <Box width={{ base: '100%', md: '60%' }}>
                     <Stack spacing={{ base: 2, md: 4 }}>
-                        <Heading bgGradient='linear(to-r, pink.200, blue.500)'
-                            bgClip='text'>sed quia non numquam eius modi tempora incidunt</Heading>
+                        <Heading bgGradient='linear(to-r, pink.200, blue.200)'
+                            bgClip='text'>This is where the magic happens</Heading>
                         <Text as='p'>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

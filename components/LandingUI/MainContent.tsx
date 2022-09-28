@@ -7,7 +7,7 @@ type Props = {}
 export const MainContent = (props: Props) => {
 
     console.log("Oh hello there stranger 👀, fancy seeing you here ❤️, you can check out the source code at: https://github.com/janhvipatil/portfolio")
-    const headingColor = useColorModeValue('linear(to-r, pink.300, blue.600)', 'linear(to-r, pink.200, blue.700)')
+    const headingColor = useColorModeValue('linear(to-r, pink.200, blue.200)', 'linear(to-r, pink.200, blue.700)')
 
     return (
         <Stack px='12%' justify={'center'} w='full' height={{ base: '90vh', md: '100vh' }}>
@@ -20,7 +20,7 @@ export const MainContent = (props: Props) => {
                         Janhvi Patil
                     </Heading>
                     <Heading as='h3' color='gray.600' fontSize={{ base: '4xl', md: '6xl' }}
-                        bgGradient='linear(to-r, blue.200, blue.800)'
+                        bgGradient='linear(to-r, blue.200, blue.700)'
                         bgClip='text'>
                         I build things for the web
                     </Heading>
