@@ -20,7 +20,8 @@ export const MainContent = (props: Props) => {
                         bgClip='text'>
                         Janhvi Patil
                     </Heading>
-                    <Heading as='p' fontSize={{ base: '4xl', md: '5xl' }}
+                    <Heading as='p' fontSize='5xl'
+                        display={{ base: 'none', md: 'flex' }}
                         bgGradient='linear(to-r, blue.200, blue.700)'
                         bgClip='text'>
                         <HStack spacing={0}>
@@ -28,6 +29,21 @@ export const MainContent = (props: Props) => {
                             <Typewriter
                                 options={{
                                     strings: ['software developer', 'product manager', 'ui/ux designer', 'open-source contributor', 'artist'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </HStack>
+                    </Heading>
+                    <Heading as='p' fontSize='2xl'
+                        display={{ base: 'flex', md: 'none' }}
+                        bgGradient='linear(to-r, blue.200, blue.700)'
+                        bgClip='text'>
+                        <HStack spacing={0}>
+                            <Text>I&apos;m a&nbsp;</Text>
+                            <Typewriter
+                                options={{
+                                    strings: ['software developer', 'product manager', 'ui/ux designer', 'artist'],
                                     autoStart: true,
                                     loop: true,
                                 }}

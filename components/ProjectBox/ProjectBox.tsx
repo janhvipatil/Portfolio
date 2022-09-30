@@ -21,8 +21,17 @@ export const ProjectBox = ({ image, heading, data, tech1, tech2, tech3, tech4 }:
     const boxColorBase = useColorModeValue('white', 'linear(to-b, gray.700, blackAlpha.700)')
 
     return (
-        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ type: 'spring', stiffness: 50 }}>
-            <Box boxShadow='lg' p={{ base: 6, md: 10 }} rounded='lg' bgGradient={{ base: boxColorBase, md: boxColorMD }} width='full'>
+        <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+            <Box
+                boxShadow='lg' p={{ base: 6, md: 10 }}
+                rounded='lg'
+                bgGradient={{ base: boxColorBase, md: boxColorMD }}
+                width='full'
+                _hover={{
+                    transform: 'scale(1.05)',
+                    transition: 'all ease-in-out .2s',
+                    cursor: 'pointer'
+                }}>
                 <HStack spacing={10} display={{ base: 'none', md: 'flex' }}>
                     <Box style={{ borderRadius: '10px', overflow: 'hidden' }}>
                         <Image src={image}
