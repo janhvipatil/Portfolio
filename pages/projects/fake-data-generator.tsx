@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
-import project1 from '../../assets/projects/project1.png'
+import project1 from '../../assets/projects/crux-cover.png'
 import { AiOutlineArrowRight, AiOutlineCalendar } from 'react-icons/ai'
 import { Footer } from '../../components/Footer'
 
@@ -37,21 +37,21 @@ const Project1 = (props: Props) => {
         <>
             <Flex width='full'
                 pl={{ base: 2, md: 40 }}
-                pt={{ base: 28, md: 36 }}
+                pt={{ base: 28, md: 32 }}
                 pr={{ base: 2, md: 24 }}
                 pb={{ base: 12, md: 32 }}>
 
-                <Stack spacing={{ base: 8, md: 16 }}>
+                <Stack spacing={{ base: 8, md: 14 }}>
 
                     <Stack spacing={{ base: 24, md: 48 }}>
 
                         <Stack spacing={{ base: 8, md: 16 }}>
                             {/** Page Header */}
-                            <Stack spacing={16}>
+                            <Stack spacing={12}>
                                 <Box>
                                     <CoverImage image={project1} />
                                 </Box>
-                                <Stack pl={{ base: 10 }}>
+                                <Stack pl={{ base: 10, md: 0 }}>
                                     <Heading fontSize={{ base: '4xl', md: '5xl' }}>Project 1 Title</Heading>
                                     <HStack>
                                         <Tag>tag 1</Tag>
@@ -61,7 +61,7 @@ const Project1 = (props: Props) => {
                             </Stack>
 
                             {/** Project Details */}
-                            <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10 }}>
+                            <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10, md: 0 }}>
                                 <Box w='70%'>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
@@ -151,8 +151,8 @@ const Project1 = (props: Props) => {
                     </Stack>
                     <Divider />
                     <Flex justifyContent='space-between' pr={{ base: 5 }}>
-                        <Button width='fit-content' variant='ghost' colorScheme='blue' size={{ base: 'sm' }}>Home</Button>
-                        <Button width='fit-content' rightIcon={<AiOutlineArrowRight />} variant='outline' colorScheme='blue' size={{ base: 'sm' }}>View next project</Button>
+                        <Button width='fit-content' variant='ghost' colorScheme='blue' size={{ base: 'sm' }}>All Projects</Button>
+                        <Button width='fit-content' rightIcon={<AiOutlineArrowRight />} variant='outline' colorScheme='blue' size={{ base: 'sm' }}>Next Project</Button>
                     </Flex>
                 </Stack>
             </Flex>

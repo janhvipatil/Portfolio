@@ -1,7 +1,7 @@
-import { Box, Divider, Grid, GridItem, Heading, HStack, IconButton, Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Divider, Grid, GridItem, Heading, HStack, IconButton, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 import { BsDot } from 'react-icons/bs'
 import { IoCalendarOutline, IoLocationOutline } from 'react-icons/io5'
 import { MyAssetBuddyTechStack, NiceTechStack } from '../TechStack/TechStack'
@@ -22,9 +22,12 @@ type Props = {
 }
 
 export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, companyName, companylink, location, jobdetails, jobdetails2 }: Props) => {
+
+    const boxBGColor = useColorModeValue('white', 'gray.800')
+
     return (
         <>
-            <Box display={{ base: 'none', md: 'flex' }}>
+            <Box display={{ base: 'none', md: 'flex' }} boxShadow='base' rounded='md' p={'8'} bgColor={boxBGColor}>
                 <Grid templateColumns='repeat(5, 1fr)' gap={6}>
                     <GridItem colSpan={1}>
                         <Stack mt={mt}>
@@ -75,7 +78,7 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                 </Grid>
             </Box>
 
-            <Box display={{ base: 'flex', md: 'none' }}>
+            <Box display={{ base: 'flex', md: 'none' }} rounded='md'>
                 <Stack spacing={4}>
                     <Stack>
                         <Box py={2}>

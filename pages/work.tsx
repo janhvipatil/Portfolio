@@ -1,17 +1,21 @@
-import { Box, Flex, Heading, Stack, useColorModeValue, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Stack, Text, HStack } from '@chakra-ui/react'
 import React from 'react'
 import nicelogo from '../assets/company logos/nice-logo.png'
 import myassetbuddylogo from '../assets/company logos/myassetbuddy-logo.png'
 import medbuyerlogo from '../assets/company logos/medbuyer-logo.png'
 import { JobInfoBox } from '../components/JobInfoBox/JobInfoBox'
+import linkedInIcon from '../assets/company logos/linkedin.png'
 import { Footer } from '../components/Footer'
-
+import Link from 'next/link'
+import Image from 'next/image'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 
 type Props = {}
 
 const Work = (props: Props) => {
 
     const headingColor = 'linear(to-r, blue.200, pink.200)'
+
     return (
         <>
             <Flex w='full'
@@ -21,13 +25,21 @@ const Work = (props: Props) => {
                 pb={{ base: 12, md: 32 }}>
 
                 <Stack spacing={{ base: 0, md: 16 }}>
-                    <Stack spacing={4} mb={{ base: 0, md: 12 }}>
+                    <Stack spacing={4} mb={{ base: 0, md: 8 }}>
                         <Heading fontSize={{ base: '4xl', md: '6xl' }}
                             bgGradient={headingColor}
-                            bgClip='text'>My professional journey so far...</Heading>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </Text>
+                            bgClip='text'>My professional journey so far</Heading>
+                        <HStack display={{ base: 'none', md: 'flex' }}>
+                            <AiOutlineArrowRight />
+                            <Text>Visit my </Text>
+                            <Box pt={1}>
+                                <Image src={linkedInIcon} alt='linkedin icon' height='24px' width='24px' />
+                            </Box>
+                            <Link href='https://www.linkedin.com/in/janhvipatil/' passHref>
+                                <a target='_blank' ><Text fontSize={{ base: 'md', md: 'lg' }} fontWeight='semibold' _hover={{ color: 'blue.400', cursor: 'pointer' }}>LinkedIn</Text></a>
+                            </Link>
+                            <Text>profile for more info</Text>
+                        </HStack>
                     </Stack>
 
                     <Stack spacing={{ base: 16, md: 28 }}>
