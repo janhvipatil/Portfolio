@@ -23,11 +23,9 @@ type Props = {
 
 export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, companyName, companylink, location, jobdetails, jobdetails2 }: Props) => {
 
-    const boxBGColor = useColorModeValue('white', 'gray.800')
-
     return (
         <>
-            <Box display={{ base: 'none', md: 'flex' }} boxShadow='base' rounded='md' p={'8'} bgColor={boxBGColor}>
+            <Box display={{ base: 'none', md: 'flex' }} p={'8'}>
                 <Grid templateColumns='repeat(5, 1fr)' gap={6}>
                     <GridItem colSpan={1}>
                         <Stack mt={mt}>
@@ -78,7 +76,7 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                 </Grid>
             </Box>
 
-            <Box display={{ base: 'flex', md: 'none' }} rounded='md'>
+            <Box display={{ base: 'flex', md: 'none' }}>
                 <Stack spacing={4}>
                     <Stack>
                         <Box py={2}>
