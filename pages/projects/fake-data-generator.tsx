@@ -2,6 +2,7 @@ import { Avatar, Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text }
 import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
 import project1 from '../../assets/projects/crux-cover.png'
+import Link from 'next/link'
 import { AiOutlineArrowRight, AiOutlineCalendar } from 'react-icons/ai'
 import { Footer } from '../../components/Footer'
 
@@ -52,7 +53,7 @@ const Project1 = (props: Props) => {
                                     <CoverImage image={project1} />
                                 </Box>
                                 <Stack pl={{ base: 10, md: 0 }}>
-                                    <Heading fontSize={{ base: '4xl', md: '5xl' }}>Project 1 Title</Heading>
+                                    <Heading fontSize={{ base: '4xl', md: '5xl' }}>Fake Data Generator</Heading>
                                     <HStack>
                                         <Tag>tag 1</Tag>
                                         <Tag>tag 2</Tag>
@@ -151,8 +152,12 @@ const Project1 = (props: Props) => {
                     </Stack>
                     <Divider />
                     <Flex justifyContent='space-between' pr={{ base: 5 }}>
-                        <Button width='fit-content' variant='ghost' colorScheme='blue' size={{ base: 'sm' }}>All Projects</Button>
-                        <Button width='fit-content' rightIcon={<AiOutlineArrowRight />} variant='outline' colorScheme='blue' size={{ base: 'sm' }}>Next Project</Button>
+                        <Link href={'/projects'} passHref>
+                            <Button width='fit-content' variant='ghost' colorScheme='blue' size={{ base: 'sm' }}>All Projects</Button>
+                        </Link>
+                        <Link href={'/projects/tec-mapping'} passHref>
+                            <Button width='fit-content' rightIcon={<AiOutlineArrowRight />} variant='outline' colorScheme='blue' size={{ base: 'sm' }}>Next Project</Button>
+                        </Link>
                     </Flex>
                 </Stack>
             </Flex>

@@ -35,7 +35,7 @@ const Contact = (props: Props) => {
                                 </Center>
                                 <Stack spacing={0}>
                                     <Text>Mail me at:</Text>
-                                    <Link href='mailto:janhvipatil@gmail.com' color='blue.500' fontWeight='medium'>janhvipatil@gmail.com</Link>
+                                    <Link href='mailto:janhvipatil716@gmail.com' color='blue.500' fontWeight='medium'>janhvipatil716@gmail.com</Link>
                                 </Stack>
                             </HStack>
                             <Stack display={{ base: 'none', md: 'flex' }}>

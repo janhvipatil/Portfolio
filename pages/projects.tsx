@@ -2,10 +2,11 @@ import { Box, Flex, Heading, HStack, Icon, SimpleGrid, Stack, Text } from '@chak
 import React from 'react'
 import project1 from '../assets/projects/crux-preview.png'
 import project2 from '../assets/projects/tec-preview.png'
-import project3 from '../assets/projects/company-preview.png'
-import project4 from '../assets/projects/portfolio-preview.png'
-import project5 from '../assets/projects/crux-blog-preview.png'
-import project6 from '../assets/projects/mem-game-preview.png'
+import project3 from '../assets/projects/artists-preview.png'
+import project4 from '../assets/projects/company-preview.png'
+import project5 from '../assets/projects/portfolio-preview.png'
+import project6 from '../assets/projects/crux-blog-preview.png'
+import project7 from '../assets/projects/mem-game-preview.png'
 import { Footer } from '../components/Footer'
 import { ProjectBox } from '../components/ProjectBox/ProjectBox'
 import githubIcon from '../assets/projects/github.png'
@@ -57,7 +58,7 @@ const Projects = (props: Props) => {
                             image={project1}
                             heading='Fake Data Generator'
                             data='A meta-data driven no-code tool for developers which allows them 
-                            to create dashboards, admin panels with ease. It helps you generate high 
+                            to create dashboards/admin panels with ease. It helps you generate high 
                             quality dummy data and validate existing data.'
                             link='/projects/fake-data-generator'>
                             <HStack>
@@ -80,12 +81,12 @@ const Projects = (props: Props) => {
 
                         <ProjectBox
                             image={project2}
-                            heading='lorem ipsum lorem ipsum'
+                            heading='TEC Mapping'
                             data='There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration
                     in some form, by injected humour, or randomised words
                     which dont look even slightly believable'
-                            link='/projects/fake-data-generator'>
+                            link='/projects/tec-mapping'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -106,12 +107,12 @@ const Projects = (props: Props) => {
 
                         <ProjectBox
                             image={project3}
-                            heading='lorem ipsum lorem ipsum'
+                            heading='Musician Booking App: Case Study'
                             data='There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration
                     in some form, by injected humour, or randomised words
                     which dont look even slightly believable'
-                            link='/projects/fake-data-generator'>
+                            link='/projects/artist-booking-app'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -132,12 +133,12 @@ const Projects = (props: Props) => {
 
                         <ProjectBox
                             image={project4}
-                            heading='lorem ipsum lorem ipsum'
+                            heading='My Asset Buddy Website'
                             data='There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration
                     in some form, by injected humour, or randomised words
                     which dont look even slightly believable'
-                            link='/projects/fake-data-generator'>
+                            link='/projects/company-website'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -158,12 +159,12 @@ const Projects = (props: Props) => {
 
                         <ProjectBox
                             image={project5}
-                            heading='lorem ipsum lorem ipsum'
+                            heading='Portfolio Website'
                             data='There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration
                     in some form, by injected humour, or randomised words
                     which dont look even slightly believable'
-                            link='/projects/fake-data-generator'>
+                            link='/projects/portfolio-website'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -184,12 +185,12 @@ const Projects = (props: Props) => {
 
                         <ProjectBox
                             image={project6}
-                            heading='lorem ipsum lorem ipsum'
+                            heading='Blog Starter Template'
                             data='There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration
                     in some form, by injected humour, or randomised words
                     which dont look even slightly believable'
-                            link='/projects/fake-data-generator'>
+                            link='/projects/blog-using-nextjs-sanityio'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -207,6 +208,33 @@ const Projects = (props: Props) => {
                                 <Text>Vercel</Text>
                             </HStack>
                         </ProjectBox>
+
+                        <ProjectBox
+                            image={project7}
+                            heading='Memory Game using Vanilla JS'
+                            data='There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration
+                    in some form, by injected humour, or randomised words
+                    which dont look even slightly believable'
+                            link='/projects/memory-game'>
+                            <HStack>
+                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
+                                <Text>NextJS</Text>
+                            </HStack>
+                            <HStack>
+                                <Icon as={SiSupabase} color='blue.300' />
+                                <Text>Supabase</Text>
+                            </HStack>
+                            <HStack>
+                                <Icon as={SiTypescript} color='blue.300' />
+                                <Text>TypeScript</Text>
+                            </HStack>
+                            <HStack>
+                                <Icon as={TbBrandVercel} color='blue.300' />
+                                <Text>Vercel</Text>
+                            </HStack>
+                        </ProjectBox>
+
                     </SimpleGrid>
                 </Stack>
             </Flex>

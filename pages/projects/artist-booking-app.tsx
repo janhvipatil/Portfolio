@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
-import project2 from '../../assets/projects/tec-cover.png'
+import project3 from '../../assets/projects/artists-cover.png'
 import Link from 'next/link'
 import { AiOutlineArrowRight, AiOutlineCalendar } from 'react-icons/ai'
 import { Footer } from '../../components/Footer'
@@ -33,7 +33,7 @@ export const PhaseHeading = ({ heading }: PhaseHeadingProps) => {
     )
 }
 
-const Project2 = (props: Props) => {
+const Project3 = (props: Props) => {
     return (
         <>
             <Flex width='full'
@@ -50,10 +50,10 @@ const Project2 = (props: Props) => {
                             {/** Page Header */}
                             <Stack spacing={12}>
                                 <Box>
-                                    <CoverImage image={project2} />
+                                    <CoverImage image={project3} />
                                 </Box>
                                 <Stack pl={{ base: 10, md: 0 }}>
-                                    <Heading fontSize={{ base: '4xl', md: '5xl' }}>TEC Mapping</Heading>
+                                    <Heading fontSize={{ base: '4xl', md: '5xl' }}>Musician Booking App: Case Study</Heading>
                                     <HStack>
                                         <Tag>tag 1</Tag>
                                         <Tag>tag 2</Tag>
@@ -155,7 +155,7 @@ const Project2 = (props: Props) => {
                         <Link href={'/projects'} passHref>
                             <Button width='fit-content' variant='ghost' colorScheme='blue' size={{ base: 'sm' }}>All Projects</Button>
                         </Link>
-                        <Link href={'/projects/artist-booking-app'} passHref>
+                        <Link href={'/projects/company-website'} passHref>
                             <Button width='fit-content' rightIcon={<AiOutlineArrowRight />} variant='outline' colorScheme='blue' size={{ base: 'sm' }}>Next Project</Button>
                         </Link>
                     </Flex>
@@ -166,4 +166,4 @@ const Project2 = (props: Props) => {
     )
 }
 
-export default Project2
+export default Project3

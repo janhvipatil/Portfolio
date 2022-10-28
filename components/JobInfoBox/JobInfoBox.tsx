@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { BsDot } from 'react-icons/bs'
 import { IoCalendarOutline, IoLocationOutline } from 'react-icons/io5'
-import { MyAssetBuddyTechStack, NiceTechStack } from '../TechStack/TechStack'
+import { MedBuyerTechStack, MyAssetBuddyTechStack, NiceTechStack } from '../TechStack/TechStack'
 import { FiExternalLink } from 'react-icons/fi'
 
 type Props = {
@@ -34,7 +34,7 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                             </Box>
                             <HStack>
                                 <IoCalendarOutline />
-                                <Text fontSize='sm' color='blue.600'>{dates}</Text>
+                                <Text fontSize='sm' color='blue.400'>{dates}</Text>
                             </HStack>
                         </Stack>
                     </GridItem>
@@ -69,7 +69,13 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                                 }
                             </Stack>
                             {companyName === 'My Asset Buddy' ?
-                                <MyAssetBuddyTechStack /> : <NiceTechStack />
+                                <MyAssetBuddyTechStack /> : null
+                            }
+                            {companyName === 'MedBuyer' ?
+                                <MedBuyerTechStack /> : null
+                            }
+                            {companyName === 'NICE Interactive Solutions India' ?
+                                <NiceTechStack /> : null
                             }
                         </Stack>
                     </GridItem>

@@ -43,8 +43,7 @@ const About = () => {
                             </Center>
                             <Center px={4} textAlign='center'>
                                 <Text className={styles.customFont}>
-                                    sed quia non numquam eius modi tempora
-                                    totam rem aperiam
+                                    I&apos;m fascinated by the intersection between tech, business and life.
                                 </Text>
                             </Center>
                         </Stack>
@@ -54,12 +53,11 @@ const About = () => {
                                     <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
                                         fontSize={{ base: '2xl', md: 'lg' }}>
-                                        Sed ut perspiciatis unde</Heading>
+                                        Educational Background</Heading>
                                     <Text as='p'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                        quae ab illo inventore veritatis et quasi architecto beatae vitae
-                                        dicta sunt explicabo.
+                                        I graduated with a Bachelors of Engineering in Electronics and Telecommunications
+                                        from International Institute of Information Technology, Pune in the year 2020 -
+                                        first class with distinction, rank: 3rd in my class.
                                     </Text>
                                 </Stack>
                                 <Stack spacing={2}>
@@ -98,11 +96,8 @@ const About = () => {
                         </Box>
                         <Box className={styles.tiltBox} width='250px'>
                             <Text className={styles.customFont}>
-                                sed quia non numquam eius modi tempora
-                                totam rem aperiam, eaque
-                                quae ab illo inventore veritatis
-                                incidunt ut labore et dolore
-                                magnam aliquam quaerat voluptatem.
+                                I&apos;m fascinated by the intersection between tech, business and life.
+                                My goal is to help build great products that have a lasting impact.
                             </Text>
                         </Box>
                         <Box className={styles.tiltArrow}>
@@ -122,10 +117,8 @@ const About = () => {
                         <Heading bgGradient='linear(to-r, pink.200, blue.200)'
                             bgClip='text'>This is where the magic happens</Heading>
                         <Text as='p'>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                            quae ab illo inventore veritatis et quasi architecto beatae vitae
-                            dicta sunt explicabo.
+                            I am a self taught programmer who owes a lot of her knowledge to Free Code Camp,
+                            independent youtube creators, well written tech documentations and of course Stack Overflow.
                         </Text>
                         <Text as='p'>adipisci velit,
                             sed quia non numquam eius modi tempora incidunt ut labore et dolore

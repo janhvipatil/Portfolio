@@ -22,7 +22,7 @@ const Work = (props: Props) => {
                 pl={{ base: 10, md: 56 }}
                 pt={{ base: 28, md: 44 }}
                 pr={{ base: 10, md: 52 }}
-                pb={{ base: 12, md: 32 }}>
+                pb={{ base: 12, md: 24 }}>
 
                 <Stack spacing={{ base: 0, md: 16 }}>
                     <Stack spacing={4} mb={{ base: 0, md: 8 }}>
@@ -54,18 +54,8 @@ const Work = (props: Props) => {
                             companyName='My Asset Buddy'
                             companylink='https://www.myassetbuddy.in/about'
                             location='Hyderabad, India'
-                            jobdetails='Sed ut perspiciatis unde omnis iste natus error 
-                        sit voluptatem accusantiumdoloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventoreveritatis et quasi
-                        architecto beatae vitae dicta sunt explicabo. Nemoenim ipsam 
-                        voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                        doloremagnam aliquam quaerat voluptatem.'
-                            jobdetails2='qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                        doloremagnam aliquam quaerat voluptatem.'
+                            jobdetails='My Asset Buddy is a SaaS product for enterprises to create and manage industrial asset data.'
+                            jobdetails2='I was also responsible for mentoring and supervising our software development intern.'
                         />
 
                         <JobInfoBox
@@ -78,15 +68,13 @@ const Work = (props: Props) => {
                             companyName='MedBuyer'
                             companylink='https://medbuyer.in/About'
                             location='Pune, India'
-                            jobdetails='Sed ut perspiciatis unde omnis iste natus error 
-                        sit voluptatem accusantiumdoloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventoreveritatis et quasi
-                        architecto beatae vitae dicta sunt explicabo. Nemoenim ipsam 
-                        voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                        doloremagnam aliquam quaerat voluptatem.'
+                            jobdetails='MedBuyer is a medical equipment marketplace for hospitals. It is a startup venture founded by a group of
+                            medical consultants who wanted to digitise and scale up their operations. Here I worked as a software developer and
+                            scrum master. My responsibilities included creating and shipping new features, adding improvements to the existing software,
+                            moderating daily standup meetings, planning our monthly sprints and creating deliverable reports for our business team.
+                            I closely worked with our testing and support team on technical issues including software system design, maintenance and performance.'
+                            jobdetails2='One of my key achievements at MedBuyer would be my inputs/work on improving our UX by adding empty states wherever necessary,
+                            help buttons with information on how to use a feature and adding Sign-In with Google for ease of entry for the users.'
                         />
 
                         <JobInfoBox
@@ -99,15 +87,15 @@ const Work = (props: Props) => {
                             companyName='NICE Interactive Solutions India'
                             companylink='https://www.nice.com/company/about-us'
                             location='Pune, India'
-                            jobdetails='Sed ut perspiciatis unde omnis iste natus error 
-                        sit voluptatem accusantiumdoloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventoreveritatis et quasi
-                        architecto beatae vitae dicta sunt explicabo. Nemoenim ipsam 
-                        voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et 
-                        doloremagnam aliquam quaerat voluptatem.'
+                            jobdetails='I worked in the CLOUD department for Satmetrix 
+                            (enterprise product that NICE licenses). My job entailed 
+                            administering the JBoss and HTTP Apache servers, deploying new releases/hotfixes
+                            of our software to both staging and production environments, provisioning/ de-provisioning
+                            servers for our clients, managing Globalscape FTP, DNS, Mail and MySQL servers of Satmetrix&apos;s environments,
+                            troubleshooting server performance issues and creating root cause analysis reports. I also helped solve tickets raised
+                            by our support team and took up customer tickets wherein I helped our clients setup AWS services like SES for their organisation.'
+                            jobdetails2='I was awarded the SPOT award in recognition for my dedication, positive attitude and co-ordination among teams from 
+                            different departments. My team also won the best team in the cloud department award for three quarters in a row.'
                         />
                     </Stack>
                 </Stack>

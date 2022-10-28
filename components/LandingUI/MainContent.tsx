@@ -28,7 +28,7 @@ export const MainContent = (props: Props) => {
                             <Text>I&apos;m a&nbsp;</Text>
                             <Typewriter
                                 options={{
-                                    strings: ['software developer', 'product manager', 'ui/ux designer', 'open-source contributor', 'artist'],
+                                    strings: ['software developer', 'product manager', 'ui/ux student', 'open-source contributor', 'artist'],
                                     autoStart: true,
                                     loop: true,
                                 }}
@@ -51,10 +51,14 @@ export const MainContent = (props: Props) => {
                         </HStack>
                     </Heading>
                 </Stack>
-                <Text as='p' fontSize={{ base: 'md', md: 'lg' }} color='gray.500'>At vero eos et accusamus et iusto odio dignissimos
-                    ducimus qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint occaecati
-                    cupiditate non provident.</Text>
+                <Text as='p' fontSize={{ base: 'md', md: 'lg' }} color='gray.500'>
+                I&apos;m a software developer with experience in product management. 
+                I help create applications that address customer needs and solve complex business challenges.
+                My expertise lies within front-end web app development and my go-to tech stack includes
+                TypeScript, React, NextJS, Frappe, Python, SQL and HTML & CSS.
+                I&apos;m a lifelong learner (currently taking a few courses on UI/UX) and love to read, 
+                travel and explore new places and cultures.
+                </Text>
                 <Button
                     colorScheme='blue'
                     variant='outline'
