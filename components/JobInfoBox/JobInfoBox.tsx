@@ -1,6 +1,5 @@
-import { Box, Divider, Grid, GridItem, Heading, HStack, IconButton, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Divider, Grid, GridItem, Heading, HStack, IconButton, Stack, Text, Link } from '@chakra-ui/react'
 import Image, { StaticImageData } from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { BsDot } from 'react-icons/bs'
 import { IoCalendarOutline, IoLocationOutline } from 'react-icons/io5'
@@ -45,9 +44,11 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                                     <Heading>{position}</Heading>
                                     <HStack spacing={4}>
                                         <HStack spacing={1}>
-                                            <Text as='h3' fontSize='xl' fontWeight='semibold'>{companyName}</Text>
-                                            <Link href={companylink}>
-                                                <IconButton icon={<FiExternalLink />} aria-label='go to company website' size='xs' variant='ghost' />
+                                            <Link isExternal href={companylink}>
+                                                <HStack>
+                                                    <Text as='h3' fontSize='xl' fontWeight='semibold'>{companyName}</Text>
+                                                    <IconButton icon={<FiExternalLink />} aria-label='go to company website' size='xs' variant='ghost' />
+                                                </HStack>
                                             </Link>
                                         </HStack>
                                         <BsDot />
@@ -95,9 +96,11 @@ export const JobInfoBox = ({ logo, logoWidth, logoHeight, mt, dates, position, c
                         <Heading fontSize='2xl'>{position}</Heading>
                         <HStack spacing={2}>
                             <HStack spacing={1}>
-                                <Text as='h3' fontSize='lg' fontWeight='semibold'>{companyName}</Text>
-                                <Link href={companylink}>
-                                    <IconButton icon={<FiExternalLink />} aria-label='go to company website' size='xs' variant='ghost' />
+                                <Link isExternal href={companylink}>
+                                    <HStack>
+                                        <Text as='h3' fontSize='lg' fontWeight='semibold'>{companyName}</Text>
+                                        <IconButton icon={<FiExternalLink />} aria-label='go to company website' size='xs' variant='ghost' />
+                                    </HStack>
                                 </Link>
                             </HStack>
                             <BsDot />

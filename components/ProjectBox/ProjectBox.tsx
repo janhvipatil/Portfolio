@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Stack, useColorModeValue, Text, SimpleGrid, Button, ButtonGroup, Icon } from '@chakra-ui/react'
+import { Box, Heading, HStack, Stack, useColorModeValue, Text, SimpleGrid, Button, ButtonGroup, Link as ChakraLink } from '@chakra-ui/react'
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { BiLink } from 'react-icons/bi'
@@ -10,10 +10,12 @@ interface Props {
     heading: string,
     data: string,
     children: React.ReactNode,
-    link: string
+    link: string,
+    projectLink?: string,
+    githubLink?: string
 }
 
-export const ProjectBox = ({ image, heading, data, children, link }: Props) => {
+export const ProjectBox = ({ image, heading, data, children, link, projectLink, githubLink }: Props) => {
 
     const boxColorMD = useColorModeValue('white', 'linear(to-tr, gray.700, blackAlpha.700)')
     const boxColorBase = useColorModeValue('white', 'linear(to-b, gray.700, blackAlpha.700)')
@@ -25,10 +27,11 @@ export const ProjectBox = ({ image, heading, data, children, link }: Props) => {
                 pr={{ base: 6, md: 4 }}
                 pl={{ base: 6, md: 4 }}
                 pt={{ base: 6, md: 4 }}
+                pb={{ base: 6, md: 4 }}
                 rounded='lg'
                 bgGradient={{ base: boxColorBase, md: boxColorMD }}
                 width='full'>
-                <HStack spacing={10} display={{ base: 'none', md: 'flex' }}>
+                <HStack spacing={8} display={{ base: 'none', md: 'flex' }}>
                     <Link href={link} passHref>
                         <Box _hover={{
                             transform: 'scale(1.04)',
@@ -50,8 +53,16 @@ export const ProjectBox = ({ image, heading, data, children, link }: Props) => {
                                 </SimpleGrid>
                             </Stack>
                             <ButtonGroup>
-                                <Button colorScheme='blue' variant='outline' size='sm'>View Project</Button>
-                                <Button leftIcon={<BiLink />} shadow='base' colorScheme='gray' size='sm' variant='outline'>Github Repo</Button>
+                                {projectLink &&
+                                    <ChakraLink href={projectLink} isExternal _hover={{ textDecoration: "none" }}>
+                                        <Button size='xs' colorScheme='blue' variant='outline'>View Project</Button>
+                                    </ChakraLink>
+                                }
+                                {githubLink &&
+                                    <ChakraLink href={githubLink} isExternal _hover={{ textDecoration: "none" }}>
+                                        <Button size='xs' leftIcon={<BiLink />} shadow='base' colorScheme='gray' variant='outline'>Github Repo</Button>
+                                    </ChakraLink>
+                                }
                             </ButtonGroup>
                         </Stack>
                     </Box>
@@ -73,9 +84,18 @@ export const ProjectBox = ({ image, heading, data, children, link }: Props) => {
                                 </SimpleGrid>
                             </Stack>
                             <ButtonGroup>
-                                <Button size='xs' colorScheme='blue' variant='outline'>View Project</Button>
-                                <Button size='xs' leftIcon={<BiLink />} shadow='base' colorScheme='gray' variant='outline'>Github Repo</Button>
+                                {projectLink &&
+                                    <ChakraLink href={projectLink} isExternal _hover={{ textDecoration: "none" }}>
+                                        <Button size='xs' colorScheme='blue' variant='outline'>View Project</Button>
+                                    </ChakraLink>
+                                }
+                                {githubLink &&
+                                    <ChakraLink href={githubLink} isExternal _hover={{ textDecoration: "none" }}>
+                                        <Button size='xs' leftIcon={<BiLink />} shadow='base' colorScheme='gray' variant='outline'>Github Repo</Button>
+                                    </ChakraLink>
+                                }
                             </ButtonGroup>
+
                         </Stack>
                     </Box>
                 </Stack>

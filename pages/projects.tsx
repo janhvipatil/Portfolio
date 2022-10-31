@@ -12,9 +12,12 @@ import { ProjectBox } from '../components/ProjectBox/ProjectBox'
 import githubIcon from '../assets/projects/github.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { AiFillHtml5, AiOutlineArrowRight } from 'react-icons/ai'
 import { TbBrandNextjs, TbBrandVercel } from 'react-icons/tb'
-import { SiSupabase, SiTypescript } from 'react-icons/si'
+import { SiChakraui, SiCss3, SiJavascript, SiMaterialui, SiPython, SiSupabase, SiTypescript } from 'react-icons/si'
+import { FaBootstrap, FaReact } from 'react-icons/fa'
+import { FiFigma } from 'react-icons/fi'
+import { RiFacebookBoxLine } from 'react-icons/ri'
 
 type Props = {}
 
@@ -60,7 +63,9 @@ const Projects = (props: Props) => {
                             data='A meta-data driven no-code tool for developers which allows them 
                             to create dashboards/admin panels with ease. It helps you generate high 
                             quality dummy data and validate existing data.'
-                            link='/projects/fake-data-generator'>
+                            link='/projects/fake-data-generator'
+                            projectLink='https://crux-supabase-admin.vercel.app/'
+                            githubLink='https://github.com/nikkothari22/crux'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -82,96 +87,82 @@ const Projects = (props: Props) => {
                         <ProjectBox
                             image={project2}
                             heading='TEC Mapping'
-                            data='There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration
-                    in some form, by injected humour, or randomised words
-                    which dont look even slightly believable'
+                            data='The project involves mapping the electron
+                            content in the ionosphere over the South Asian region 
+                            in near-real time by using TEC data from fixed IGS stations 
+                            in India, Thailand, and Malaysia.'
                             link='/projects/tec-mapping'>
                             <HStack>
-                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
-                                <Text>NextJS</Text>
+                                <Icon as={SiPython} color='blue.300' />
+                                <Text>Python</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiSupabase} color='blue.300' />
-                                <Text>Supabase</Text>
+                                <Icon as={SiJavascript} color='blue.300' />
+                                <Text>JavaScript</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiTypescript} color='blue.300' />
-                                <Text>TypeScript</Text>
+                                <Icon as={FaReact} color='blue.300' />
+                                <Text>React</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={TbBrandVercel} color='blue.300' />
-                                <Text>Vercel</Text>
+                                <Icon as={SiMaterialui} color='blue.300' />
+                                <Text>Material UI</Text>
                             </HStack>
                         </ProjectBox>
 
                         <ProjectBox
                             image={project3}
-                            heading='Musician Booking App: Case Study'
-                            data='There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration
-                    in some form, by injected humour, or randomised words
-                    which dont look even slightly believable'
-                            link='/projects/artist-booking-app'>
+                            heading='Musician Booking App'
+                            data='UX case study for an artist booking app that allows
+                            users to search and filter artists in their area based on genre,
+                            language, rating and more. Users can be assured of their bookings by calling/ messaging 
+                            the band and signing an agreement.'
+                            link='/projects/artist-booking-app'
+                            projectLink='https://www.figma.com/community/file/1168219277592520636'>
                             <HStack>
-                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
-                                <Text>NextJS</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={SiSupabase} color='blue.300' />
-                                <Text>Supabase</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={SiTypescript} color='blue.300' />
-                                <Text>TypeScript</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={TbBrandVercel} color='blue.300' />
-                                <Text>Vercel</Text>
+                                <Icon as={FiFigma} fontSize='1.2em' color='blue.300' />
+                                <Text>Figma</Text>
                             </HStack>
                         </ProjectBox>
 
                         <ProjectBox
                             image={project4}
                             heading='My Asset Buddy Website'
-                            data='There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration
-                    in some form, by injected humour, or randomised words
-                    which dont look even slightly believable'
-                            link='/projects/company-website'>
+                            data='My Asset Buddy is a SaaS product for enterprises to create
+                            and manage industrial asset data. Here, I worked on creating a website for them
+                            so that their clients can easily go through their services.'
+                            link='/projects/company-website'
+                            projectLink='https://www.myassetbuddy.in/'>
                             <HStack>
-                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
-                                <Text>NextJS</Text>
+                                <Icon as={RiFacebookBoxLine} color='blue.300' />
+                                <Text>Frappe</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiSupabase} color='blue.300' />
-                                <Text>Supabase</Text>
+                                <Icon as={FaBootstrap} color='blue.300' />
+                                <Text>Bootstrap</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiTypescript} color='blue.300' />
-                                <Text>TypeScript</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={TbBrandVercel} color='blue.300' />
-                                <Text>Vercel</Text>
+                                <Icon as={SiCss3} color='blue.300' />
+                                <Text>CSS</Text>
                             </HStack>
                         </ProjectBox>
 
                         <ProjectBox
                             image={project5}
                             heading='Portfolio Website'
-                            data='There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration
-                    in some form, by injected humour, or randomised words
-                    which dont look even slightly believable'
-                            link='/projects/portfolio-website'>
+                            data='This is a just for fun passion project that I have created
+                            for collating my recent projects and helping my future employers/
+                            prospective clients know more about me.'
+                            link='/projects/portfolio-website'
+                            projectLink='https://www.janhvipatil.me/'
+                            githubLink='https://github.com/janhvipatil/portfolio'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiSupabase} color='blue.300' />
-                                <Text>Supabase</Text>
+                                <Icon as={SiChakraui} color='blue.300' />
+                                <Text>Chakra UI</Text>
                             </HStack>
                             <HStack>
                                 <Icon as={SiTypescript} color='blue.300' />
@@ -186,18 +177,19 @@ const Projects = (props: Props) => {
                         <ProjectBox
                             image={project6}
                             heading='Blog Starter Template'
-                            data='There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration
-                    in some form, by injected humour, or randomised words
-                    which dont look even slightly believable'
-                            link='/projects/blog-using-nextjs-sanityio'>
+                            data='I have used Sanity IO headless CMS, NextJS and Chakra UI to 
+                            create a blog template that can be used to easily jumpstart any project that needs
+                            a website with a blog.'
+                            link='/projects/blog-using-nextjs-sanityio'
+                            projectLink='https://crux-blog.vercel.app/'
+                            githubLink='https://github.com/janhvipatil/crux-blog-frontend'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiSupabase} color='blue.300' />
-                                <Text>Supabase</Text>
+                                <Icon as={SiChakraui} color='blue.300' />
+                                <Text>Chakra UI</Text>
                             </HStack>
                             <HStack>
                                 <Icon as={SiTypescript} color='blue.300' />
@@ -211,23 +203,26 @@ const Projects = (props: Props) => {
 
                         <ProjectBox
                             image={project7}
-                            heading='Memory Game using Vanilla JS'
-                            data='There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration
-                    in some form, by injected humour, or randomised words
-                    which dont look even slightly believable'
-                            link='/projects/memory-game'>
+                            heading='Memory Game using JS'
+                            data='The game has a grid of cards,
+                            that can be flipped over and matched. 
+                            If a match is found, the cards stay flipped,
+                            if not, they will turn back. 
+                            The game continues until all cards are matched.'
+                            link='/projects/memory-game'
+                            projectLink='https://memory-game-jp.vercel.app/'
+                            githubLink='https://github.com/janhvipatil/Memory_Game'>
                             <HStack>
-                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
-                                <Text>NextJS</Text>
+                                <Icon as={SiJavascript} color='blue.300' />
+                                <Text>JavaScript</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiSupabase} color='blue.300' />
-                                <Text>Supabase</Text>
+                                <Icon as={AiFillHtml5} fontSize='1.2em' color='blue.300' />
+                                <Text>HTML</Text>
                             </HStack>
                             <HStack>
-                                <Icon as={SiTypescript} color='blue.300' />
-                                <Text>TypeScript</Text>
+                                <Icon as={SiCss3} color='blue.300' />
+                                <Text>CSS</Text>
                             </HStack>
                             <HStack>
                                 <Icon as={TbBrandVercel} color='blue.300' />

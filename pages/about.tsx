@@ -57,7 +57,7 @@ const About = () => {
                                     <Text as='p'>
                                         I graduated with a Bachelors of Engineering in Electronics and Telecommunications
                                         from International Institute of Information Technology, Pune in the year 2020 -
-                                        first class with distinction, rank: 3rd in my class.
+                                        first class with distinction, class rank - 3rd
                                     </Text>
                                 </Stack>
                                 <Stack spacing={2}>
