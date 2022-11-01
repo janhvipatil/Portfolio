@@ -53,30 +53,31 @@ const About = () => {
                                     <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
                                         fontSize={{ base: '2xl', md: 'lg' }}>
-                                        Educational Background</Heading>
-                                    <Text as='p'>
-                                        I graduated with a Bachelors of Engineering in Electronics and Telecommunications
-                                        from International Institute of Information Technology, Pune in the year 2020 -
-                                        first class with distinction, class rank - 3rd
-                                    </Text>
+                                        Turning ideas into <strong>products</strong> is my calling</Heading>
+                                    <Stack spacing={0}>
+                                        <Text as='p'>
+                                            In my pursuit of finding my passion, I have worn multiple hats in my professional life.
+                                            From working in cloud operations to software development to product management, I have had the
+                                            opportunity of having the unusual vantage point of a person who gets to experience the life cycle of a product
+                                            from multiple perspectives.
+                                        </Text>
+                                        <Text as='p'>
+                                            This essentially helped me in figuring out that what I&apos;m good at is in bridging the communication gap
+                                            between disparate teams; breaking down complex ideas (or rebuilding them) to different audiences;
+                                            and figuring out what people really want/need.
+                                        </Text>
+                                    </Stack>
                                 </Stack>
                                 <Stack spacing={2}>
-                                    <Heading as='h3'
+                                    {/* <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
                                         fontSize={{ base: '2xl', md: 'lg' }}>
-                                        Nemo enim ipsam voluptatem quia voluptas sit</Heading>
+                                        Education</Heading> */}
                                     <Text as='p'>
-                                        Nemo enim ipsam voluptatem quia voluptas sit
-                                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                                        eos qui ratione voluptatem sequi nesciunt.
-                                    </Text>
-                                    <Text as='p'>adipisci velit,
-                                        sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                        magnam aliquam quaerat voluptatem.
-                                    </Text>
-                                    <Text as='p'>adipisci velit,
-                                        sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                        magnam aliquam quaerat voluptatem.
+                                        I graduated with a Bachelor of Engineering in Electronics and Telecommunications
+                                        from International Institute of Information Technology, Pune, in the year 2020 - with a
+                                        first class with distinction, class rank - 3rd, and multiple awards under my belt including
+                                        the Dr. L H Hiranandani Award for &apos;Best Girl Student&apos;
                                     </Text>
                                 </Stack>
                             </Stack>
@@ -117,16 +118,13 @@ const About = () => {
                         <Heading bgGradient='linear(to-r, pink.200, blue.200)'
                             bgClip='text'>This is where the magic happens</Heading>
                         <Text as='p'>
-                            I am a self taught programmer who owes a lot of her knowledge to Free Code Camp,
-                            independent youtube creators, well written tech documentations and of course Stack Overflow.
+
                         </Text>
-                        <Text as='p'>adipisci velit,
-                            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                            magnam aliquam quaerat voluptatem.
+                        <Text as='p'>
+
                         </Text>
-                        <Text as='p'>adipisci velit,
-                            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                            magnam aliquam quaerat voluptatem.
+                        <Text as='p'>
+
                         </Text>
                     </Stack>
                 </Box>

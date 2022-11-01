@@ -24,8 +24,8 @@ const Work = (props: Props) => {
                 pr={{ base: 10, md: 52 }}
                 pb={{ base: 12, md: 24 }}>
 
-                <Stack spacing={{ base: 0, md: 16 }}>
-                    <Stack spacing={4} mb={{ base: 0, md: 8 }}>
+                <Stack spacing={{ base: 0, md: 9 }}>
+                    <Stack spacing={4}>
                         <Heading fontSize={{ base: '4xl', md: '6xl' }}
                             bgGradient={headingColor}
                             bgClip='text'>My professional journey so far</Heading>
@@ -50,12 +50,19 @@ const Work = (props: Props) => {
                             logoHeight='55px'
                             mt='1'
                             dates='Feb 2022 - Current'
-                            position='Product Manager and Software Engineer'
+                            position='Product Manager and Software Developer'
                             companyName='My Asset Buddy'
                             companylink='https://www.myassetbuddy.in/about'
                             location='Hyderabad, India'
-                            jobdetails='My Asset Buddy is a SaaS product for enterprises to create and manage industrial asset data.'
-                            jobdetails2='I was also responsible for mentoring and supervising our software development intern.'
+                            jobdetails='My Asset Buddy is a SaaS startup that helps enterprises create and manage industrial asset data.
+                            Being one of the first 3 employees, I was lucky enough to be a part of every phase of the product from requirement 
+                            gathering and design to implementation.
+                            Here I got the opportunity to work in frontend, backend, devOps, design and much more. I designed and created the 
+                            company webiste, set up SEO, sitemap and hosting.
+                            My responsibilities on the product side included planning sprints, leading projects, designing and creating features, writing APIs, 
+                            code reviews, testing, moderating daily stand-up calls and creating deliverable reports for each sprint.'
+                            jobdetails2='I was also responsible for mentoring and supervising our software development intern. This job not only helped
+                            me grow as a developer but I also learned essential skills necessary for a manager working in tech.'
                         />
 
                         <JobInfoBox
