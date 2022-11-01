@@ -69,11 +69,17 @@ export const ProjectBox = ({ image, heading, data, children, link, projectLink, 
                 </HStack>
 
                 <Stack display={{ base: 'block', md: 'none' }} w='full'>
-                    <Box style={{ borderRadius: '5px', overflow: 'hidden' }} w='full'>
-                        <Image src={image}
-                            alt='dummy'
-                            objectFit='cover' />
-                    </Box>
+                    <Link href={link} passHref>
+                        <Box style={{ borderRadius: '5px', overflow: 'hidden' }} w='full' _hover={{
+                            transform: 'scale(1.04)',
+                            transition: 'all ease-in-out .2s',
+                            cursor: 'pointer'
+                        }}>
+                            <Image src={image}
+                                alt='dummy'
+                                objectFit='cover' />
+                        </Box>
+                    </Link>
                     <Box w='full'>
                         <Stack spacing={4} w='full'>
                             <Heading textAlign='left' fontSize='xl'>{heading}</Heading>
