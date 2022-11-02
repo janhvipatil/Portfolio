@@ -149,13 +149,15 @@ export const Navbar = () => {
                                 </NavLink>
                             ))}
                         </HStack>
-                        <Button
-                            rightIcon={<HiDownload fontSize='1em' />}
-                            variant='outline'
-                            colorScheme='blue'
-                            size='md'>
-                            Resume
-                        </Button>
+                        <a href='Janhvi-Patil-resume.pdf' download='Janhvi-Patil-resume.pdf'>
+                            <Button
+                                rightIcon={<HiDownload fontSize='1em' />}
+                                variant='outline'
+                                colorScheme='blue'
+                                size='md'>
+                                Resume
+                            </Button>
+                        </a>
                     </HStack>
                 </Flex>
                 <Box pt={1}>
