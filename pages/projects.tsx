@@ -155,7 +155,7 @@ const Projects = (props: Props) => {
                             prospective clients know more about me.'
                             link='/projects/portfolio-website'
                             projectLink='https://www.janhvipatil.me/'
-                            githubLink='https://github.com/janhvipatil/portfolio'>
+                            githubLink='https://github.com/janhvipatil/Portfolio'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -182,7 +182,7 @@ const Projects = (props: Props) => {
                             a website with a blog.'
                             link='/projects/blog-using-nextjs-sanityio'
                             projectLink='https://crux-blog.vercel.app/'
-                            githubLink='https://github.com/janhvipatil/crux-blog-frontend'>
+                            githubLink='https://github.com/janhvipatil/Crux-Blog-Frontend'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
                                 <Text>NextJS</Text>
@@ -211,7 +211,7 @@ const Projects = (props: Props) => {
                             The game continues until all cards are matched.'
                             link='/projects/memory-game'
                             projectLink='https://memory-game-jp.vercel.app/'
-                            githubLink='https://github.com/janhvipatil/Memory_Game'>
+                            githubLink='https://github.com/janhvipatil/Memory-Game'>
                             <HStack>
                                 <Icon as={SiJavascript} color='blue.300' />
                                 <Text>JavaScript</Text>
