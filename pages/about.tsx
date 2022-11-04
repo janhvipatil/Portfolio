@@ -59,7 +59,7 @@ const About = () => {
                                             In my pursuit of finding my passion, I have worn multiple hats in my professional life.
                                             From working in cloud operations to software development to product management, I have had the
                                             opportunity of having the unusual vantage point of a person who gets to experience the life cycle of a product
-                                            from multiple perspectives.
+                                            from varying perspectives.
                                         </Text>
                                         <Text as='p'>
                                             This essentially helped me in figuring out that what I&apos;m good at is in bridging the communication gap
