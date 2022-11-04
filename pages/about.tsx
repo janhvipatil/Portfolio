@@ -69,10 +69,10 @@ const About = () => {
                                     </Stack>
                                 </Stack>
                                 <Stack spacing={2}>
-                                    {/* <Heading as='h3'
+                                    <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
                                         fontSize={{ base: '2xl', md: 'lg' }}>
-                                        Education</Heading> */}
+                                        Education</Heading>
                                     <Text as='p'>
                                         I graduated with a Bachelor of Engineering in Electronics and Telecommunications
                                         from International Institute of Information Technology, Pune, in the year 2020 - with a
