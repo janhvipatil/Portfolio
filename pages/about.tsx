@@ -62,7 +62,7 @@ const About = () => {
                                             from varying perspectives.
                                         </Text>
                                         <Text as='p'>
-                                            This essentially helped me in figuring out that what I&apos;m good at is in bridging the communication gap
+                                            This essentially helped me in figuring out that what I&apos;m really good at is in bridging the communication gap
                                             between disparate teams; breaking down complex ideas (or rebuilding them) to different audiences;
                                             and figuring out what people really want/need.
                                         </Text>
