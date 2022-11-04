@@ -50,10 +50,22 @@ const About = () => {
                         <Stack spacing={{ base: 16, md: 6 }} direction={{ base: 'column-reverse', md: 'column' }}>
                             <Stack spacing={{ base: 4, md: 4 }} width={{ base: '100%', md: '70%' }}>
                                 <Stack spacing={2}>
+                                    {/* <Heading as='h3'
+                                        fontWeight={{ base: 'bold', md: 'semibold' }}
+                                        fontSize={{ base: '2xl', md: 'lg' }}>
+                                        Education</Heading> */}
+                                    <Text as='p'>
+                                        I graduated with a Bachelor of Engineering in Electronics and Telecommunications
+                                        from International Institute of Information Technology, Pune, in the year 2020 - with a
+                                        first class with distinction, class rank - 3rd, and multiple awards under my belt including
+                                        the Dr. L H Hiranandani Award for &apos;Best Girl Student&apos;
+                                    </Text>
+                                </Stack>
+                                <Stack spacing={2}>
                                     <Heading as='h3'
                                         fontWeight={{ base: 'bold', md: 'semibold' }}
                                         fontSize={{ base: '2xl', md: 'lg' }}>
-                                        Turning ideas into <strong>products</strong> is my calling</Heading>
+                                        My calling - Turning ideas into <strong>products</strong></Heading>
                                     <Stack spacing={0}>
                                         <Text as='p'>
                                             In my pursuit of finding my passion, I have worn multiple hats in my professional life.
@@ -67,18 +79,6 @@ const About = () => {
                                             and figuring out what people really want/need.
                                         </Text>
                                     </Stack>
-                                </Stack>
-                                <Stack spacing={2}>
-                                    <Heading as='h3'
-                                        fontWeight={{ base: 'bold', md: 'semibold' }}
-                                        fontSize={{ base: '2xl', md: 'lg' }}>
-                                        Education</Heading>
-                                    <Text as='p'>
-                                        I graduated with a Bachelor of Engineering in Electronics and Telecommunications
-                                        from International Institute of Information Technology, Pune, in the year 2020 - with a
-                                        first class with distinction, class rank - 3rd, and multiple awards under my belt including
-                                        the Dr. L H Hiranandani Award for &apos;Best Girl Student&apos;
-                                    </Text>
                                 </Stack>
                             </Stack>
                             <Box width={{ base: '100%', md: '60%' }} px={{ base: 16, md: 0 }}>
@@ -118,10 +118,17 @@ const About = () => {
                         <Heading bgGradient='linear(to-r, pink.200, blue.200)'
                             bgClip='text'>This is where the magic happens</Heading>
                         <Text as='p'>
-
+                            I&apos;m someone who has enjoyed building beautiful things almost all my life, what started
+                            as me having a natural talent in sketching and painting, soon grew into me exploring
+                            digital art and then trickled into web design. One of my first projects was when I created
+                            a music library of all my favorite songs with label covers on my local machine in 8th grade.
+                            (This obviously predated Spotify and Apple music and was kinda shady considering I obtained
+                            those songs from a pendrive shared by a friend)
                         </Text>
                         <Text as='p'>
-
+                            What I did not know at the time was that my skills as an artist and developer combined with my
+                            extroverted nature and love for communicating with people will evolve into becoming some of my
+                            greatest assets.
                         </Text>
                         <Text as='p'>
 
