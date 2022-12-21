@@ -149,7 +149,7 @@ export const Navbar = () => {
                                 </NavLink>
                             ))}
                         </HStack>
-                        <a href='Janhvi-Patil-resume.pdf' download='Janhvi-Patil-resume.pdf'>
+                        <a href='Janhvi-Patil-CV.pdf' download='Janhvi-Patil-CV.pdf'>
                             <Button
                                 rightIcon={<HiDownload fontSize='1em' />}
                                 variant='outline'

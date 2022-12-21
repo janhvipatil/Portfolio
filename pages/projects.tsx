@@ -13,11 +13,10 @@ import githubIcon from '../assets/projects/github.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiFillHtml5, AiOutlineArrowRight } from 'react-icons/ai'
-import { TbBrandNextjs, TbBrandVercel } from 'react-icons/tb'
+import { TbBrandNextjs, TbBrandVercel, TbLetterF } from 'react-icons/tb'
 import { SiChakraui, SiCss3, SiJavascript, SiMaterialui, SiPython, SiSupabase, SiTypescript } from 'react-icons/si'
 import { FaBootstrap, FaReact } from 'react-icons/fa'
 import { FiFigma } from 'react-icons/fi'
-import { RiFacebookBoxLine } from 'react-icons/ri'
 
 type Props = {}
 
@@ -91,7 +90,8 @@ const Projects = (props: Props) => {
                             content in the ionosphere over the South Asian region 
                             in near-real time by using TEC data from fixed IGS stations 
                             in India, Thailand, and Malaysia.'
-                            link='/projects/tec-mapping'>
+                            link='/projects/tec-mapping'
+                            projectLink='http://www.ppcrc.isquareit.edu.in/tec.html'>
                             <HStack>
                                 <Icon as={SiPython} color='blue.300' />
                                 <Text>Python</Text>
@@ -134,7 +134,7 @@ const Projects = (props: Props) => {
                             link='/projects/company-website'
                             projectLink='https://www.myassetbuddy.in/'>
                             <HStack>
-                                <Icon as={RiFacebookBoxLine} color='blue.300' />
+                                <Icon as={TbLetterF} color='blue.300' />
                                 <Text>Frappe</Text>
                             </HStack>
                             <HStack>

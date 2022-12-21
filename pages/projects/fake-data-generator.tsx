@@ -66,23 +66,13 @@ const Project1 = (props: Props) => {
                                 <Box w='70%'>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                            Rokt began a redesign of its entire B2B
-                                            application with the vision of becoming the
-                                            next biggest ads management platform, alongside
-                                            Facebook Ads Manager and Google Ads.
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                            The goal of this particular project was to
-                                            identify any usability issues with the
-                                            beta release and determine the critical
-                                            features to prioritise for the next iteration
-                                            of the product.
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                            Rokt began a redesign of its entire B2B
-                                            application with the vision of becoming the
-                                            next biggest ads management platform, alongside
-                                            Facebook Ads Manager and Google Ads.
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
