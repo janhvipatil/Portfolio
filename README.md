@@ -1,3 +1,6 @@
+![portfolio-preview](https://user-images.githubusercontent.com/29656465/208853233-cc0374f4-af63-4514-8cff-344c962d4b0b.png)(https://www.janhvipatil.me/) 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
