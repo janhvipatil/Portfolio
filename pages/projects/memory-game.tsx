@@ -1,10 +1,12 @@
-import { Avatar, Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
 import project7 from '../../assets/projects/mem-game-cover.png'
+import Image from 'next/image'
 import Link from 'next/link'
-import { AiOutlineArrowRight, AiOutlineCalendar } from 'react-icons/ai'
+import { AiOutlineCalendar } from 'react-icons/ai'
 import { Footer } from '../../components/Footer'
+import avatar from '../../assets/about/avatar.png'
 
 type Props = {}
 
@@ -55,8 +57,8 @@ const Project7 = (props: Props) => {
                                 <Stack pl={{ base: 10, md: 0 }}>
                                     <Heading fontSize={{ base: '4xl', md: '5xl' }}>Memory Game using Vanilla JS</Heading>
                                     <HStack>
-                                        <Tag>tag 1</Tag>
-                                        <Tag>tag 2</Tag>
+                                        <Tag>Learning JavaScript</Tag>
+                                        <Tag>Fun personal project</Tag>
                                     </HStack>
                                 </Stack>
                             </Stack>
@@ -66,79 +68,35 @@ const Project7 = (props: Props) => {
                                 <Box w='70%'>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        A memory game is a game in which players have to match pairs of cards by remembering their positions on the game board. The game is typically played with a deck of cards, with each card having a unique image or pattern on one side and a solid color on the other. The goal of the game is to match as many pairs of cards as possible within a set time limit or until all the pairs have been found.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        I created this using vanilla JavaScript, which was a lot of fun and a great learning experience. I started by designing the game board using HTML and CSS, which involved creating a container for the cards and individual card elements that could be clicked to reveal their hidden images. Then, I used JavaScript to populate the game board with cards by creating an array of images and a loop to generate and append the card elements.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        Next, I implemented the game logic to handle the various events that occur during gameplay, such as revealing the hidden image on a card when it is clicked and comparing it to previously revealed cards. I also added a timer using the setInterval function and a score counter to keep track of the player&apos;s progress.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
                                 <Stack spacing={4}>
                                     <DetailsStack heading='collaborators' stackSpacing={2}>
-                                        <HStack>
-                                            <HStack>
-                                                <Avatar
-                                                    size='xs'
-                                                    name='Kola Tioluwani'
-                                                    src='https://bit.ly/tioluwani-kolawole' />
-                                                <Text>Person 1</Text>
-                                            </HStack>
-                                            <HStack>
-                                                <Avatar
-                                                    size='xs'
-                                                    name='Kola Tioluwani'
-                                                    src='https://bit.ly/tioluwani-kolawole' />
-                                                <Text>Person 2</Text>
-                                            </HStack>
+                                    <HStack>
+                                            <Image src={avatar} alt='my picture' height='24px' width='24px' />
+                                            <Text>Janhvi Patil</Text>
                                         </HStack>
                                     </DetailsStack>
                                     <DetailsStack heading='my role' stackSpacing={2}>
-                                        <Text>Role 1, Role 2, Role 3</Text>
+                                        <Text>Developer</Text>
+                                        <Text>Designer</Text>
                                     </DetailsStack>
                                     <DetailsStack heading='duration' stackSpacing={2}>
-                                        <HStack><AiOutlineCalendar /><Text fontSize='sm'>Jun 2016 to Feb 2019</Text></HStack>
+                                        <HStack><AiOutlineCalendar /><Text fontSize='sm'>June 2020 to August 2020</Text></HStack>
                                     </DetailsStack>
                                 </Stack>
                             </Stack>
 
                         </Stack>
-
-                        {/** Process Information */}
-                        <Stack spacing={16} pl={{ base: 10, md: 16 }} pr={{ base: 12, md: 24 }}>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Understanding the problem' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Gathering insights' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Solution architecting' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Wireframing' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Development' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Results and Takeaways' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-                        </Stack>
+                        
                     </Stack>
                     <Divider />
                     <Flex justifyContent='space-between' pr={{ base: 5 }}>
