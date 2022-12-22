@@ -1,10 +1,12 @@
-import { Avatar, Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
 import project6 from '../../assets/projects/crux-blog-cover.png'
+import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineArrowRight, AiOutlineCalendar } from 'react-icons/ai'
 import { Footer } from '../../components/Footer'
+import avatar from '../../assets/about/avatar.png'
 
 type Props = {}
 
@@ -55,8 +57,8 @@ const Project6 = (props: Props) => {
                                 <Stack pl={{ base: 10, md: 0 }}>
                                     <Heading fontSize={{ base: '4xl', md: '5xl' }}>Blog Starter Template</Heading>
                                     <HStack>
-                                        <Tag>tag 1</Tag>
-                                        <Tag>tag 2</Tag>
+                                        <Tag>NextJS</Tag>
+                                        <Tag>Headless CMS</Tag>
                                     </HStack>
                                 </Stack>
                             </Stack>
@@ -66,40 +68,34 @@ const Project6 = (props: Props) => {
                                 <Box w='70%'>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        A blog starter template that allows developers to quickly get started building a blog or content-driven website using NextJS, Typescript, Chakra UI, and Sanity IO. The template would provide a basic structure and configuration for the application, as well as a set of pre-built components and utilities for managing content and styling the application. With this template, developers can focus on building their content and features, rather than setting up the underlying infrastructure and design system.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        In addition to these technologies, the template also utilizes Supabase as the database for storing and managing the content for the blog or website. Supabase is a realtime, open-source Postgres database that provides a powerful and flexible API for building applications, allowing developers to easily connect to a Postgres database, query and manipulate data, and receive realtime updates through websockets.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        One unique feature of this template is the ability for users to create polls and have their audience vote. Supabase is used to store the poll data and track the votes in realtime, providing a convenient and interactive way for users to engage with their audience.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
                                 <Stack spacing={4}>
                                     <DetailsStack heading='collaborators' stackSpacing={2}>
-                                        <HStack>
-                                            <HStack>
-                                                <Avatar
-                                                    size='xs'
-                                                    name='Kola Tioluwani'
-                                                    src='https://bit.ly/tioluwani-kolawole' />
-                                                <Text>Person 1</Text>
-                                            </HStack>
-                                            <HStack>
-                                                <Avatar
-                                                    size='xs'
-                                                    name='Kola Tioluwani'
-                                                    src='https://bit.ly/tioluwani-kolawole' />
-                                                <Text>Person 2</Text>
-                                            </HStack>
+                                    <HStack>
+                                            <Image src={avatar} alt='my picture' height='24px' width='24px' />
+                                            <Text>Janhvi Patil</Text>
                                         </HStack>
                                     </DetailsStack>
                                     <DetailsStack heading='my role' stackSpacing={2}>
-                                        <Text>Role 1, Role 2, Role 3</Text>
+                                    <Stack spacing={0}>
+                                            <Text>Solution Architect</Text>
+                                            <Text>Software Developer</Text>
+                                            <Text>UI/UX Design</Text>
+                                            <Text>Data Modelling</Text>
+                                            <Text>Usability testing</Text>
+                                        </Stack>
                                     </DetailsStack>
                                     <DetailsStack heading='duration' stackSpacing={2}>
-                                        <HStack><AiOutlineCalendar /><Text fontSize='sm'>Jun 2016 to Feb 2019</Text></HStack>
+                                        <HStack><AiOutlineCalendar /><Text fontSize='sm'>January 2022 to February 2022</Text></HStack>
                                     </DetailsStack>
                                 </Stack>
                             </Stack>
@@ -107,38 +103,12 @@ const Project6 = (props: Props) => {
                         </Stack>
 
                         {/** Process Information */}
-                        <Stack spacing={16} pl={{ base: 10, md: 16 }} pr={{ base: 12, md: 24 }}>
-
+                        {/* <Stack spacing={16} pl={{ base: 10, md: 16 }} pr={{ base: 12, md: 24 }}>
                             <Stack spacing={6}>
-                                <PhaseHeading heading='Understanding the problem' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
+                                <PhaseHeading heading='Conclusion' />
+                                <Text letterSpacing='wide'>Using Supabase in conjunction with NextJS, Typescript, Chakra UI, and Sanity IO can provide a powerful and scalable foundation for building a variety of web applications, including blogs, content-driven websites, and interactive polls and surveys. The template can be easily customized and extended to fit the specific needs and requirements of many projects.</Text>
                             </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Gathering insights' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Solution architecting' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Wireframing' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Development' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Results and Takeaways' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-                        </Stack>
+                        </Stack> */}
                     </Stack>
                     <Divider />
                     <Flex justifyContent='space-between' pr={{ base: 5 }}>
