@@ -91,16 +91,26 @@ const Project3 = (props: Props) => {
                                 <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        The music industry has always been a challenging and
+                                         competitive space for musicians to thrive in. Although, with
+                                          the advent of the internet and social media, it has
+                                           become easier for artists to reach out
+                                            to potential clients and book gigs, the process can still be tedious
+                                             and time-consuming for both the artists and the clients.
+                                              This is where a musician booking app can help to streamline 
+                                              the process and make it easier for both parties.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                        </Text>
-                                        <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                        </Text>
-                                        <Text letterSpacing='wide'>
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        The app aims to provide a platform for users to easily
+                                         discover and book artists for their events and occasions, 
+                                         without having to go through the hassle of searching for artists on
+                                          multiple websites or contacting them individually. The app provides
+                                           users with a variety of filters and search options, 
+                                           as well as the ability to schedule demos and meetings with artists, 
+                                           all within a single platform. This makes it easier for users to
+                                            find and book the right artist for their event, without having 
+                                            to go through the cumbersome process of contacting multiple artists 
+                                            and coordinating schedules.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
@@ -133,14 +143,11 @@ const Project3 = (props: Props) => {
                         {/** Process Information */}
                         <Stack spacing={{ base: 16, md: 24 }} pl={{ base: 10, md: 16 }} pr={{ base: 12, md: 24 }}>
 
-                            <Stack spacing={6}>
-                                <PhaseHeading heading='Understanding the problem' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
-                            </Stack>
-
                             <Stack spacing={6} width='full'>
-                                <PhaseHeading heading='Gathering insights' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
+                                <PhaseHeading heading='Design Process' />
+                                <Stack>
+                                <Text as='span' letterSpacing='wide'>The design process for the musician booking app began with understanding user pain points, this was done by collecting data and feedback from potential users to understand their needs and preferences.</Text>
+                                </Stack>
                                 <Stack>
                                     <HStack spacing={4}>
                                         <Box>
@@ -171,6 +178,7 @@ const Project3 = (props: Props) => {
 
                             <Stack spacing={6}>
                                 <PhaseHeading heading='User Personas' />
+                                <Text as='span' letterSpacing='wide'>This helped in the creation of user personas and user flows. By understanding the user&apos;s needs and the steps they will take when using the app, we can prioritize which features and functionality are most important to include in the app. This can help ensure that the app is focused and streamlined, rather than cluttered with unnecessary features.</Text>
                                 <Stack spacing={12}>
                                     <Stack spacing={2}>
                                         <Text>User persona: Jennie Anderson</Text>
@@ -189,7 +197,7 @@ const Project3 = (props: Props) => {
 
                             <Stack spacing={6}>
                                 <PhaseHeading heading='User Journey' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
+                                <Text letterSpacing='wide'>User flow maps out the steps that a user will take when using the app, from start to finish. This can help designers understand the user&apos;s perspective and identify any potential bottlenecks or pain points in the user journey.</Text>
                                 <Box>
                                     <Image src={usermap} alt='flowchart' />
                                 </Box>
@@ -197,7 +205,11 @@ const Project3 = (props: Props) => {
 
                             <Stack spacing={6}>
                                 <PhaseHeading heading='Solution architecting' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
+                                <Text as='span'>The final design of the app includes a clean and modern interface with easy-to-use navigation. The home screen features a search bar and a variety of filters, such as location, genre, and price range, to help users find the right artist for their event.</Text>
+
+                                <Text as='span'>Users can also browse through a list of featured artists or browse by genre to discover new artists. Once they have found an artist they are interested in, they can view their profile, chat with the artists and schedule a demo or meeting.</Text>
+
+                                <Text as='span'>Once the user has decided on an artist, they can easily book them through the app and pay for their services using a secure payment gateway. The app also includes a calendar feature to help users keep track of their bookings and events.</Text>
                                 <Box _hover={{
                                     transform: 'scale(1.35)',
                                     transition: 'all ease-in-out .2s'
@@ -220,6 +232,7 @@ const Project3 = (props: Props) => {
 
                             <Stack spacing={6}>
                                 <PhaseHeading heading='High fidelity prototype' />
+                                <Text as='span'>Next, wireframes were created to map out the layout and functionality of the app. The wireframes were then refined and turned into high-fidelity mockups using Figma&apos;s design tools.</Text>
                                 <HStack spacing={4}>
                                     <Center>
                                         <Image src={highfidelityprototype1} alt='high fidelity prototype 1' height='600px' width='800px' />
@@ -275,8 +288,14 @@ const Project3 = (props: Props) => {
                             </Stack>
 
                             <Stack spacing={6}>
-                                <PhaseHeading heading='Results and Takeaways' />
-                                <Text letterSpacing='wide'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</Text>
+                                <PhaseHeading heading='Conclusion' />
+                                <Text letterSpacing='wide'>The musician booking app created using Figma
+                                 has helped to simplify the process of finding and booking artists
+                                  for events and occasions. It provides users with a variety
+                                   of filters and search options to help them discover the right artist,
+                                    and allows them to easily schedule demos and meetings and make bookings 
+                                    through the app. The clean and modern interface, along with easy-to-use navigation, 
+                                    makes the app user-friendly and enjoyable to use.</Text>
                             </Stack>
                         </Stack>
                     </Stack>
