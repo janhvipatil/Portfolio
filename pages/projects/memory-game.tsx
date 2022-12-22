@@ -58,7 +58,7 @@ const Project7 = (props: Props) => {
                                     <Heading fontSize={{ base: '4xl', md: '5xl' }}>Memory Game using Vanilla JS</Heading>
                                     <HStack>
                                         <Tag>Learning JavaScript</Tag>
-                                        <Tag>Fun personal project</Tag>
+                                        <Tag>Fun Personal Project</Tag>
                                     </HStack>
                                 </Stack>
                             </Stack>
