@@ -1,5 +1,5 @@
 import { Box, Button, Center, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
 import project3 from '../../assets/projects/artists-cover.png'
 import avatar from '../../assets/about/avatar.png'
@@ -91,25 +91,25 @@ const Project3 = (props: Props) => {
                                 <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        The music industry has always been a challenging and
-                                         competitive space for musicians to thrive in. Although, with
-                                          the advent of the internet and social media, it has
-                                           become easier for artists to reach out
+                                            The music industry has always been a challenging and
+                                            competitive space for musicians to thrive in. Although, with
+                                            the advent of the internet and social media, it has
+                                            become easier for artists to reach out
                                             to potential clients and book gigs, the process can still be tedious
-                                             and time-consuming for both the artists and the clients.
-                                              This is where a musician booking app can help to streamline 
-                                              the process and make it easier for both parties.
+                                            and time-consuming for both the artists and the clients.
+                                            This is where a musician booking app can help to streamline
+                                            the process and make it easier for both parties.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        The app aims to provide a platform for users to easily
-                                         discover and book artists for their events and occasions, 
-                                         without having to go through the hassle of searching for artists on
-                                          multiple websites or contacting them individually. The app provides
-                                           users with a variety of filters and search options, 
-                                           as well as the ability to schedule demos and meetings with artists, 
-                                           all within a single platform. This makes it easier for users to
-                                            find and book the right artist for their event, without having 
-                                            to go through the cumbersome process of contacting multiple artists 
+                                            The app aims to provide a platform for users to easily
+                                            discover and book artists for their events and occasions,
+                                            without having to go through the hassle of searching for artists on
+                                            multiple websites or contacting them individually. The app provides
+                                            users with a variety of filters and search options,
+                                            as well as the ability to schedule demos and meetings with artists,
+                                            all within a single platform. This makes it easier for users to
+                                            find and book the right artist for their event, without having
+                                            to go through the cumbersome process of contacting multiple artists
                                             and coordinating schedules.
                                         </Text>
                                     </DetailsStack>
@@ -146,7 +146,7 @@ const Project3 = (props: Props) => {
                             <Stack spacing={6} width='full'>
                                 <PhaseHeading heading='Design Process' />
                                 <Stack>
-                                <Text as='span' letterSpacing='wide'>The design process for the musician booking app began with understanding user pain points, this was done by collecting data and feedback from potential users to understand their needs and preferences.</Text>
+                                    <Text as='span' letterSpacing='wide'>The design process for the musician booking app began with understanding user pain points, this was done by collecting data and feedback from potential users to understand their needs and preferences.</Text>
                                 </Stack>
                                 <Stack>
                                     <HStack spacing={4}>
@@ -290,11 +290,11 @@ const Project3 = (props: Props) => {
                             <Stack spacing={6}>
                                 <PhaseHeading heading='Conclusion' />
                                 <Text letterSpacing='wide'>The musician booking app created using Figma
-                                 has helped to simplify the process of finding and booking artists
-                                  for events and occasions. It provides users with a variety
-                                   of filters and search options to help them discover the right artist,
-                                    and allows them to easily schedule demos and meetings and make bookings 
-                                    through the app. The clean and modern interface, along with easy-to-use navigation, 
+                                    has helped to simplify the process of finding and booking artists
+                                    for events and occasions. It provides users with a variety
+                                    of filters and search options to help them discover the right artist,
+                                    and allows them to easily schedule demos and meetings and make bookings
+                                    through the app. The clean and modern interface, along with easy-to-use navigation,
                                     makes the app user-friendly and enjoyable to use.</Text>
                             </Stack>
                         </Stack>
