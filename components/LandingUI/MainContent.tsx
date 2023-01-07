@@ -52,7 +52,7 @@ export const MainContent = (props: Props) => {
                     </Heading>
                 </Stack>
                 <Text as='p' fontSize={{ base: 'md', md: 'lg' }} color='gray.500'>
-                I&apos;m a software developer with experience in product management. 
+                I&apos;m a full-stack software developer with experience in product management. 
                 I help create applications that address customer needs and solve complex business challenges.
                 My expertise lies within front-end web app development and my go-to tech stack includes
                 TypeScript, React, NextJS, Frappe, Python, SQL and HTML & CSS.

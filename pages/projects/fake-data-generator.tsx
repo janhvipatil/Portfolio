@@ -87,13 +87,13 @@ const Project1 = (props: Props) => {
                                 <Box w='70%'>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            Our open source web tool allows users to easily create and manage custom data tables, called &apos;doctypes.&apos; During the creation process, users can define the fields of their doctype and specify the type of each field, such as text, number, email, phone number, and more. They can also set validation rules to ensure that the data entered into the fields meets certain criteria, such as maximum length or value, or rules to prevent negative values.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            In addition to creating and customizing their doctypes, users can also generate high-quality dummy data based on the fields they have defined. This can be done with just a single click, using the faker.js library to generate realistic fake data. The generated data can be downloaded as a CSV or copied in JSON format, or it can be added directly to a connected database.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            To use this tool, users will need to clone the GitHub repository and provide credentials for Supabase in order to connect their database. This process is secure, as we do not have access to any of the user&apos;s databases. Users can create and validate their data independently, giving them complete control over their doctypes and the data they contain.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
@@ -113,8 +113,8 @@ const Project1 = (props: Props) => {
                                     <DetailsStack heading='my role' stackSpacing={2}>
                                         <Text>Software Developer</Text>
                                         <Text>Solution Architect</Text>
-                                        <Text>Database Modelling</Text>
                                         <Text>UI/UX Development</Text>
+                                        <Text>Database Modelling</Text>
                                         <Text>Testing</Text>
                                     </DetailsStack>
                                     <DetailsStack heading='duration' stackSpacing={2}>
@@ -195,20 +195,20 @@ const Project1 = (props: Props) => {
                                     </Stack>
                                     <HStack>
                                         <Stack spacing={2}>
-                                            <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                            <Text>generated dummy data:</Text>
                                             <Box>
                                                 <Image src={generatedData1} alt='generated data 1' />
                                             </Box>
                                         </Stack>
                                         <Stack spacing={2}>
-                                            <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                            <Text>generated dummy data:</Text>
                                             <Box>
                                                 <Image src={generatedData2} alt='generated data 2' />
                                             </Box>
                                         </Stack>
                                     </HStack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>Users can copy the generated data in JSON format directly by clicking on the copy button</Text>
                                         <Box>
                                             <Image src={jsonData} alt='JSON data generated' />
                                         </Box>
@@ -217,37 +217,37 @@ const Project1 = (props: Props) => {
                             </Stack>
 
                             <Stack spacing={6}>
-                                <PhaseHeading heading='Sed ut perspiciatis unde omnis iste' />
-                                <Text as='span' letterSpacing='wide'>Sed ut perspiciatis unde omnis iste</Text>
+                                <PhaseHeading heading='Other Notable Features' />
+                                <Text as='span' letterSpacing='wide'>Login/ Signup screens</Text>
                                 <Stack spacing={12}>
                                     <HStack>
                                         <Stack spacing={2}>
-                                            <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                            <Text>light-mode</Text>
                                             <Box>
                                                 <Image src={loginScreenLight} alt='login screen light' />
                                             </Box>
                                         </Stack>
                                         <Stack spacing={2}>
-                                            <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                            <Text>dark-mode</Text>
                                             <Box>
                                                 <Image src={loginScreenDark} alt='login screen dark' />
                                             </Box>
                                         </Stack>
                                     </HStack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>On the login page settings, users can say if they want both login and signup pages or only login page. They can also write what text messages will appear on these pages in the form of heading and subheadings, users can also add their company logo, which will appear on the login page if uploaded.</Text>
                                         <Box>
                                             <Image src={loginSettings1} alt='login settings 1' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>Users can enable multiple OAuth providers in their settings. The enabled provider options will be shown on the login/sign-up screens. Users will have to add the appropriate credentials for all enabled providers and activate them in their Supabase dashboard.</Text>
                                         <Box>
                                             <Image src={loginSettings2} alt='login settings 2' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>users can add their organisation or brand logo, this will show up on the app sidebar. As we support both light and dark mode, we recommend users to upload logos for both if available. (However, this is optional)</Text>
                                         <Box>
                                             <Image src={loginSettings3} alt='login settings 3' />
                                         </Box>
@@ -256,22 +256,35 @@ const Project1 = (props: Props) => {
                             </Stack>
 
                             <Stack spacing={6}>
-                                <PhaseHeading heading='Sed ut perspiciatis unde omnis iste' />
-                                <Text as='span' letterSpacing='wide'>Sed ut perspiciatis unde omnis iste</Text>
+                                <PhaseHeading heading='Example: Generating Dummy Employee Data' />
                                 <Stack spacing={12}>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>We define the fields according to our use case: </Text>
                                         <Box>
                                             <Image src={employeeDataExample1} alt='employee data fields' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>Generated Data: </Text>
                                         <Box>
                                             <Image src={employeeDataExample2} alt='employee data generated' />
                                         </Box>
                                     </Stack>
                                 </Stack>
+                            </Stack>
+
+                            <Stack spacing={6}>
+                                <PhaseHeading heading='Results and Takeaways' />
+                                <Text letterSpacing='wide'>
+                                    This solution could be helpful in a variety of situations where users need to create and manage custom data tables, and generate dummy data for testing or development purposes. Some potential examples include:</Text>
+                                <Stack>
+                                    <p><strong>Software development:</strong> Developers may want to create custom data models and generate dummy data to test their applications.</p>
+
+                                    <p><strong>Data analysis and visualization:</strong> Data analysts and visualization specialists may use this tool to create custom data sets and generate dummy data to practice their skills and build prototypes.</p>
+
+                                    <p><strong>Business operations:</strong> Businesses may use this tool to create custom data tables to track and manage various types of information, such as customer or product data.</p>
+                                </Stack>
+                                <Text>My team at My Asset Buddy has used this tool to generate data to test <i>table</i> and <i>form</i> UI elements without worrying about typing out multiple lines of dummy data themselves or worse filling out forms with values such as &apos;test data&apos;.</Text>
                             </Stack>
 
                         </Stack>
