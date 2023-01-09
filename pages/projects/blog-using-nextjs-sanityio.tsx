@@ -65,28 +65,28 @@ const Project6 = (props: Props) => {
 
                             {/** Project Details */}
                             <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10, md: 0 }}>
-                                <Box w='70%'>
+                                <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        A blog starter template that allows developers to quickly get started building a blog or content-driven website using NextJS, Typescript, Chakra UI, and Sanity IO. The template would provide a basic structure and configuration for the application, as well as a set of pre-built components and utilities for managing content and styling the application. With this template, developers can focus on building their content and features, rather than setting up the underlying infrastructure and design system.
+                                            A blog starter template that allows developers to quickly get started building a blog or content-driven website using NextJS, Typescript, Chakra UI, and Sanity IO. The template would provide a basic structure and configuration for the application, as well as a set of pre-built components and utilities for managing content and styling the application. With this template, developers can focus on building their content and features, rather than setting up the underlying infrastructure and design system.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        In addition to these technologies, the template also utilizes Supabase as the database for storing and managing the content for the blog or website. Supabase is a realtime, open-source Postgres database that provides a powerful and flexible API for building applications, allowing developers to easily connect to a Postgres database, query and manipulate data, and receive realtime updates through websockets.
+                                            In addition to these technologies, the template also utilizes Supabase as the database for storing and managing the content for the blog or website. Supabase is a realtime, open-source Postgres database that provides a powerful and flexible API for building applications, allowing developers to easily connect to a Postgres database, query and manipulate data, and receive realtime updates through websockets.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        One unique feature of this template is the ability for users to create polls and have their audience vote. Supabase is used to store the poll data and track the votes in realtime, providing a convenient and interactive way for users to engage with their audience.
+                                            One unique feature of this template is the ability for users to create polls and have their audience vote. Supabase is used to store the poll data and track the votes in realtime, providing a convenient and interactive way for users to engage with their audience.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
                                 <Stack spacing={4}>
                                     <DetailsStack heading='collaborators' stackSpacing={2}>
-                                    <HStack>
+                                        <HStack>
                                             <Image src={avatar} alt='my picture' height='24px' width='24px' />
                                             <Text>Janhvi Patil</Text>
                                         </HStack>
                                     </DetailsStack>
                                     <DetailsStack heading='my role' stackSpacing={2}>
-                                    <Stack spacing={0}>
+                                        <Stack spacing={0}>
                                             <Text>Solution Architect</Text>
                                             <Text>Software Developer</Text>
                                             <Text>UI/UX Design</Text>

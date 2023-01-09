@@ -1,4 +1,4 @@
-import {Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Heading, HStack, Stack, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CoverImage } from '../../components/CoverImage/CoverImage'
 import project5 from '../../assets/projects/portfolio-cover.png'
@@ -64,16 +64,16 @@ const Project5 = (props: Props) => {
 
                             {/** Project Details */}
                             <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10, md: 0 }}>
-                                <Box w='70%'>
+                                <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        As a web developer, I am always looking for new challenges and ways to showcase my skills. That&apos;s why I was excited to design and create my own portfolio website using NextJS, TypeScript, and Chakra UI. The site not only showcases my work and bio, but it also includes some fun easter eggs for users to discover. For example, when you inspect the site, you&apos;ll find a personal message from me. I&apos;ve also included links to my latest CV and some of my favorite projects, complete with GitHub links and preview links so that visitors can see my work in action. 
+                                            As a web developer, I am always looking for new challenges and ways to showcase my skills. That&apos;s why I was excited to design and create my own portfolio website using NextJS, TypeScript, and Chakra UI. The site not only showcases my work and bio, but it also includes some fun easter eggs for users to discover. For example, when you inspect the site, you&apos;ll find a personal message from me. I&apos;ve also included links to my latest CV and some of my favorite projects, complete with GitHub links and preview links so that visitors can see my work in action.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
                                 <Stack spacing={4}>
                                     <DetailsStack heading='collaborators' stackSpacing={2}>
-                                    <HStack>
+                                        <HStack>
                                             <Image src={avatar} alt='my picture' height='24px' width='24px' />
                                             <Text>Janhvi Patil</Text>
                                         </HStack>

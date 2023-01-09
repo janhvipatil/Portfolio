@@ -65,7 +65,7 @@ const Project2 = (props: Props) => {
 
                             {/** Project Details */}
                             <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10, md: 0 }}>
-                                <Box w='70%'>
+                                <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
                                             During my final year of undergraduate studies, I secured a seven-month research internship at Pralhad P. Chhabria Research Center (PPCRC), Pune, India. Here, I was able to gain valuable hands-on experience in the field of Geographic Information Systems and Data Analytics while working under the guidance of Professor Dr Rajesh Chowdhary.

@@ -65,22 +65,22 @@ const Project7 = (props: Props) => {
 
                             {/** Project Details */}
                             <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10, md: 0 }}>
-                                <Box w='70%'>
+                                <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                        A memory game is a game in which players have to match pairs of cards by remembering their positions on the game board. The game is typically played with a deck of cards, with each card having a unique image or pattern on one side and a solid color on the other. The goal of the game is to match as many pairs of cards as possible within a set time limit or until all the pairs have been found.
+                                            A memory game is a game in which players have to match pairs of cards by remembering their positions on the game board. The game is typically played with a deck of cards, with each card having a unique image or pattern on one side and a solid color on the other. The goal of the game is to match as many pairs of cards as possible within a set time limit or until all the pairs have been found.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        I created this using vanilla JavaScript, which was a lot of fun and a great learning experience. I started by designing the game board using HTML and CSS, which involved creating a container for the cards and individual card elements that could be clicked to reveal their hidden images. Then, I used JavaScript to populate the game board with cards by creating an array of images and a loop to generate and append the card elements.
+                                            I created this using vanilla JavaScript, which was a lot of fun and a great learning experience. I started by designing the game board using HTML and CSS, which involved creating a container for the cards and individual card elements that could be clicked to reveal their hidden images. Then, I used JavaScript to populate the game board with cards by creating an array of images and a loop to generate and append the card elements.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                        Next, I implemented the game logic to handle the various events that occur during gameplay, such as revealing the hidden image on a card when it is clicked and comparing it to previously revealed cards. I also added a timer using the setInterval function and a score counter to keep track of the player&apos;s progress.
+                                            Next, I implemented the game logic to handle the various events that occur during gameplay, such as revealing the hidden image on a card when it is clicked and comparing it to previously revealed cards. I also added a timer using the setInterval function and a score counter to keep track of the player&apos;s progress.
                                         </Text>
                                     </DetailsStack>
                                 </Box>
                                 <Stack spacing={4}>
                                     <DetailsStack heading='collaborators' stackSpacing={2}>
-                                    <HStack>
+                                        <HStack>
                                             <Image src={avatar} alt='my picture' height='24px' width='24px' />
                                             <Text>Janhvi Patil</Text>
                                         </HStack>
@@ -96,7 +96,7 @@ const Project7 = (props: Props) => {
                             </Stack>
 
                         </Stack>
-                        
+
                     </Stack>
                     <Divider />
                     <Flex justifyContent='space-between' pr={{ base: 5 }}>

@@ -84,7 +84,7 @@ const Project1 = (props: Props) => {
 
                             {/** Project Details */}
                             <Stack spacing={{ base: 12, md: 20 }} direction={{ base: 'column', md: 'row' }} pl={{ base: 10, md: 0 }}>
-                                <Box w='70%'>
+                                <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
                                             Our open source web tool allows users to easily create and manage custom data tables, called &apos;doctypes.&apos; During the creation process, users can define the fields of their doctype and specify the type of each field, such as text, number, email, phone number, and more. They can also set validation rules to ensure that the data entered into the fields meets certain criteria, such as maximum length or value, or rules to prevent negative values.
