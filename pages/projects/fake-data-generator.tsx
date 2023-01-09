@@ -129,29 +129,29 @@ const Project1 = (props: Props) => {
                         <Stack spacing={{ base: 16, md: 24 }} pl={{ base: 10, md: 16 }} pr={{ base: 12, md: 24 }}>
 
                             <Stack spacing={6}>
-                                <PhaseHeading heading='Sed ut perspiciatis unde omnis iste' />
-                                <Text as='span' letterSpacing='wide'>Sed ut perspiciatis unde omnis iste</Text>
+                                <PhaseHeading heading='Tool Details' />
+                                <Text as='span' letterSpacing='wide'>After the user has cloned the Git Repo, has completed the base setup and deployed the application, they can start using it.</Text>
                                 <Stack spacing={12}>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>The user is shown a empty state in their homepage when no doctypes have been created.</Text>
                                         <Box>
                                             <Image src={emptyHomePage} alt='homepage upon first logon' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>When the user clicks on <i>Create New Doctype</i>, they are redirected to the doctype creation page. After creating a doctype, users can define fields for their doctype.</Text>
                                         <Box>
                                             <Image src={creatingDoctype} alt='creating doctype' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>If no fields exist in a doctype, then data generation is not possible and the user is shown the below graphic.</Text>
                                         <Box>
                                             <Image src={cannotGenerate} alt='data cannot be generated if no fields exist' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>To define fields for a doctype, the user needs to fill out a form detailing out the metadata for the field. For example: Is it a character field or numeric, what kind of validation rules apply to this field, etc... </Text>
                                         <Box>
                                             <Image src={addFields1} alt='add new field' />
                                         </Box>
@@ -160,48 +160,48 @@ const Project1 = (props: Props) => {
                             </Stack>
 
                             <Stack spacing={6}>
-                                <PhaseHeading heading='Sed ut perspiciatis unde omnis iste' />
-                                <Text as='span' letterSpacing='wide'>Sed ut perspiciatis unde omnis iste</Text>
+                                <PhaseHeading heading='Let&apos;s try using the tool' />
+                                <Text as='span' letterSpacing='wide'>In this example, we are generating dummy data for a fictional cat care website, wherein users can register their pets and avail serives for them.</Text>
                                 <Stack spacing={12}>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>We start by creating a doctype - by clicking the <i>Create New Doctype</i> button on our homepage.</Text>
                                         <Box>
                                             <Image src={homeScreen} alt='home screen' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>After the doctype has been created, we define some basic fields such as the pet&apos;s name, animal type, age, owner information and maybe an optional field for the pet&apos;s profile picture. </Text>
                                         <Box>
                                             <Image src={editingDoctype} alt='editing doctype' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>Let&apos;s say the profile is getting created for the pet, so in terms of owner information we only need a valid email address for contacting the owner.</Text>
                                         <Box>
                                             <Image src={addFields} alt='add fields' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>This is what our fields table looks like after we have defined all essential fields.</Text>
                                         <Box>
                                             <Image src={allFieldsData} alt='all data fields' />
                                         </Box>
                                     </Stack>
                                     <Stack spacing={2}>
-                                        <Text>Sed ut perspiciatis unde omnis iste</Text>
+                                        <Text>Now, to generate dummy data, we click on <i>Generate Data</i></Text>
                                         <Box>
                                             <Image src={generateDataPage} alt='generated data page' />
                                         </Box>
                                     </Stack>
                                     <HStack>
                                         <Stack spacing={2}>
-                                            <Text>generated dummy data:</Text>
+                                            <Text>This is what the system generates when the pet type has been selected to cat:</Text>
                                             <Box>
                                                 <Image src={generatedData1} alt='generated data 1' />
                                             </Box>
                                         </Stack>
                                         <Stack spacing={2}>
-                                            <Text>generated dummy data:</Text>
+                                            <Text>When we generate the data again we get different results. The user can choose how many rows of dummy data needs to be generated.</Text>
                                             <Box>
                                                 <Image src={generatedData2} alt='generated data 2' />
                                             </Box>
