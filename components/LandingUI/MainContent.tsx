@@ -20,22 +20,24 @@ export const MainContent = (props: Props) => {
                         bgClip='text'>
                         Janhvi Patil
                     </Heading>
-                    <Heading as='p' fontSize='5xl'
+                    <Heading as='div' fontSize='5xl'
                         display={{ base: 'none', md: 'flex' }}
                         bgGradient='linear(to-r, blue.200, blue.700)'
                         bgClip='text'>
                         <HStack spacing={0}>
                             <Text>I&apos;m a&nbsp;</Text>
-                            <Typewriter
-                                options={{
-                                    strings: ['software developer', 'product manager', 'ui/ux student', 'open-source contributor', 'artist'],
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
+                            <Box>
+                                <Typewriter
+                                    options={{
+                                        strings: ['software developer', 'product manager', 'ui/ux student', 'open-source contributor', 'artist'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </Box>
                         </HStack>
                     </Heading>
-                    <Heading as='p' fontSize='2xl'
+                    <Heading as='div' fontSize='2xl'
                         display={{ base: 'flex', md: 'none' }}
                         bgGradient='linear(to-r, blue.200, blue.700)'
                         bgClip='text'>
