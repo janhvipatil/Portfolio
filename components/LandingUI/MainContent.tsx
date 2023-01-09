@@ -1,4 +1,4 @@
-import { Button, Heading, HStack, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Button, Heading, HStack, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import Link from 'next/link'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Typewriter from 'typewriter-effect'
@@ -41,23 +41,25 @@ export const MainContent = (props: Props) => {
                         bgClip='text'>
                         <HStack spacing={0}>
                             <Text>I&apos;m a&nbsp;</Text>
-                            <Typewriter
-                                options={{
-                                    strings: ['software developer', 'product manager', 'ui/ux designer', 'artist'],
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
+                            <Box>
+                                <Typewriter
+                                    options={{
+                                        strings: ['software developer', 'product manager', 'ui/ux designer', 'artist'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </Box>
                         </HStack>
                     </Heading>
                 </Stack>
                 <Text as='p' fontSize={{ base: 'md', md: 'lg' }} color='gray.500'>
-                I&apos;m a full-stack software developer with experience in product management. 
-                I help create applications that address customer needs and solve complex business challenges.
-                My expertise lies within front-end web app development and my go-to tech stack includes
-                TypeScript, React, NextJS, Frappe, Python, SQL and HTML & CSS.
-                I&apos;m a lifelong learner (currently taking a few courses on UI/UX) and love to read, 
-                travel and explore new places and cultures.
+                    I&apos;m a full-stack software developer with experience in product management.
+                    {/* I help create applications that address customer needs and solve complex business challenges. */}
+                    My expertise lies within front-end web app development and my go-to tech stack includes
+                    TypeScript, React, NextJS, Frappe, Python, SQL and HTML & CSS.
+                    I&apos;m a lifelong learner (currently taking a few courses on UI/UX) and love to read,
+                    travel and explore new places and cultures.
                 </Text>
                 <Button
                     colorScheme='blue'
