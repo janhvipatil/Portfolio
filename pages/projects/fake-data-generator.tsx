@@ -193,7 +193,7 @@ const Project1 = (props: Props) => {
                                             <Image src={generateDataPage} alt='generated data page' />
                                         </Box>
                                     </Stack>
-                                    <HStack>
+                                    <HStack display={{ base: 'none', md: 'flex' }}>
                                         <Stack spacing={2}>
                                             <Text>This is what the system generates when the pet type has been selected to cat:</Text>
                                             <Box>
@@ -207,6 +207,20 @@ const Project1 = (props: Props) => {
                                             </Box>
                                         </Stack>
                                     </HStack>
+
+                                    <Stack spacing={2} display={{ md: 'none' }}>
+                                        <Text>This is what the system generates when the pet type has been selected to cat:</Text>
+                                        <Box>
+                                            <Image src={generatedData1} alt='generated data 1' />
+                                        </Box>
+                                    </Stack>
+                                    <Stack spacing={2} display={{ md: 'none' }}>
+                                        <Text>When we generate the data again we get different results. The user can choose how many rows of dummy data needs to be generated.</Text>
+                                        <Box>
+                                            <Image src={generatedData2} alt='generated data 2' />
+                                        </Box>
+                                    </Stack>
+
                                     <Stack spacing={2}>
                                         <Text>Users can copy the generated data in JSON format directly by clicking on the copy button</Text>
                                         <Box>
