@@ -57,8 +57,8 @@ const Project4 = (props: Props) => {
                                 <Stack pl={{ base: 10, md: 0 }}>
                                     <Heading fontSize={{ base: '4xl', md: '5xl' }}>My Asset Buddy Company Website</Heading>
                                     <HStack>
-                                        <Tag>tag 1</Tag>
-                                        <Tag>tag 2</Tag>
+                                        <Tag>SaaS Startup</Tag>
+                                        <Tag>Software Development</Tag>
                                     </HStack>
                                 </Stack>
                             </Stack>
@@ -68,14 +68,12 @@ const Project4 = (props: Props) => {
                                 <Box w={{ base: '90%', md: '70%' }}>
                                     <DetailsStack heading='overview' stackSpacing={4}>
                                         <Text letterSpacing='wide'>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            Elevate your digital transformation journey with My Asset Buddy - the ultimate industrial asset data management platform. Our cutting-edge cataloging tool, built on the latest tech stack, allows for efficient building, managing, and updating of assets and materials data. Our data governance and collaboration features ensure the highest level of data integrity, while our project management capabilities keep you informed of progress. My Asset Buddy guarantees a significant return on investment for asset-intensive organizations.
                                         </Text>
                                         <Text letterSpacing='wide'>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            As a software developer at this innovative startup, I am proud to have played a key role in the creation of our company&apos;s website. By utilizing my expertise in web development and utilizing the powerful Frappe framework, I designed and developed a user-friendly, visually-appealing website that effectively communicates our value proposition and showcases our products and services. I leveraged Bootstrap and CSS for styling to ensure the website was fully responsive and provided a consistent look and feel across all devices.
                                         </Text>
-                                        <Text letterSpacing='wide'>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                        </Text>
+
                                     </DetailsStack>
                                 </Box>
                                 <Stack spacing={4}>
@@ -86,10 +84,16 @@ const Project4 = (props: Props) => {
                                         </HStack>
                                     </DetailsStack>
                                     <DetailsStack heading='my role' stackSpacing={2}>
-                                        <Text>Role 1, Role 2, Role 3</Text>
+                                        <Stack spacing={0}>
+                                            <Text>Product management,</Text>
+                                            <Text>User research and analysis,</Text>
+                                            <Text>MVP definition</Text>
+                                            <Text>Web development,</Text>
+                                            <Text>UI/UX design</Text>
+                                        </Stack>
                                     </DetailsStack>
                                     <DetailsStack heading='duration' stackSpacing={2}>
-                                        <HStack><AiOutlineCalendar /><Text fontSize='sm'>Jun 2016 to Feb 2019</Text></HStack>
+                                        <HStack><AiOutlineCalendar /><Text fontSize='sm'>February 2022 to May 2022</Text></HStack>
                                     </DetailsStack>
                                 </Stack>
                             </Stack>
