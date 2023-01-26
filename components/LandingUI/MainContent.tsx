@@ -1,12 +1,12 @@
 import { Box, Button, Heading, HStack, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { useEffect } from 'react'
 import { FaTelegramPlane } from 'react-icons/fa'
-import Typewriter from 'typewriter-effect'
 
-type Props = {}
+const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false })
 
-export const MainContent = (props: Props) => {
+export const MainContent = () => {
 
     useEffect(() => {
         console.log("Oh hello there stranger 👀, fancy seeing you here ❤️, you can check out the source code at: https://github.com/janhvipatil/portfolio")
