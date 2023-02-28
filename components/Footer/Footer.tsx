@@ -35,7 +35,7 @@ export const Footer = (props: Props) => {
                 <HStack px='0.5'>
                     <Logo height={30} width={30} />
                     <Text fontSize='sm' color='subtle'>
-                        &copy; {new Date().getFullYear()} Janhvi Patil
+                        &copy; 2022 Janhvi Patil
                     </Text>
                 </HStack>
                 <HStack spacing={2}>
