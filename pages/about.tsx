@@ -122,7 +122,7 @@ const About = () => {
                             as me having a natural talent in sketching and painting, soon grew into me exploring
                             digital art and then trickled into web design. One of my first projects was when I created
                             a music library of all my favorite songs with label covers on my local machine in 8th grade.
-                            (This obviously predated Spotify and Apple music and was kinda shady considering I obtained
+                            (This predated Spotify and Apple music and was kinda shady considering I obtained
                             those songs from a pendrive shared by a friend)
                         </Text>
                         <Text as='p'>

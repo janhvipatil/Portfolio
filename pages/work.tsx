@@ -10,9 +10,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
-type Props = {}
-
-const Work = (props: Props) => {
+const Work = () => {
 
     const headingColor = 'linear(to-r, blue.200, pink.200)'
 
@@ -49,20 +47,13 @@ const Work = (props: Props) => {
                             logoWidth='150px'
                             logoHeight='55px'
                             mt='1'
-                            dates='Feb 2022 - Current'
-                            position='Product Manager and Software Developer'
+                            dates='Feb 2022 - Mar 2023'
+                            position='Software Development Consultant'
                             companyName='My Asset Buddy'
                             companylink='https://www.myassetbuddy.in/about'
-                            location='Hyderabad, India'
-                            jobdetails='My Asset Buddy is a SaaS startup that helps enterprises create and manage industrial asset data.
-                            Being one of the first 3 employees, I was lucky enough to be a part of every phase of the product from requirement 
-                            gathering and design to implementation.
-                            Here I got the opportunity to work in frontend, backend, devOps, design and much more. I designed and created the 
-                            company webiste, set up SEO, sitemap and hosting.
-                            My responsibilities on the product side included planning sprints, leading projects, designing and creating features, writing APIs, 
-                            code reviews, testing, moderating daily stand-up calls and creating deliverable reports for each sprint.'
-                            jobdetails2='I was also responsible for mentoring and supervising our software development intern. This job not only helped
-                            me grow as a developer but I also learned essential skills necessary for a manager working in tech.'
+                            location='On-site Hyderabad, India'
+                            jobdetails='At My Asset Buddy, a SaaS startup for managing industrial asset data, I was one of the first three employees, involved in every stage of the product, from requirements gathering to implementation. I worked on frontend, backend, DevOps, and design; I helped develop features, wrote APIs, conducted peer code reviews, and reported sprint deliverables, I also built the company website.'
+                            jobdetails2='I was also responsible for mentoring our software development intern, which helped me grow as a developer and gain some management skills.'
                         />
 
                         <JobInfoBox
@@ -71,17 +62,12 @@ const Work = (props: Props) => {
                             logoHeight='35px'
                             mt='2'
                             dates='Nov 2021 - Feb 2022'
-                            position='Software Developer'
+                            position='Software Development Consultant'
                             companyName='MedBuyer'
                             companylink='https://medbuyer.in/About'
-                            location='Pune, India'
-                            jobdetails='MedBuyer is a medical equipment marketplace for hospitals. It is a startup venture founded by a group of
-                            medical consultants who wanted to digitise and scale up their operations. Here I worked as a software developer and
-                            scrum master. My responsibilities included creating and shipping new features, adding improvements to the existing software,
-                            moderating daily standup meetings, planning our monthly sprints and creating deliverable reports for our business team.
-                            I closely worked with our testing and support team on technical issues including software system design, maintenance and performance.'
-                            jobdetails2='One of my key achievements at MedBuyer would be my inputs/work on improving our UX by adding empty states wherever necessary,
-                            help buttons with information on how to use a feature and adding Sign-In with Google for ease of entry for the users.'
+                            location='Remote, Pune, India'
+                            jobdetails='At MedBuyer, a medical equipment marketplace for hospitals, I worked as a software developer. My responsibilities included developing new features, improving existing software, leading daily standups, helping plan monthly sprints, and creating reports for the business team. I collaborated with the testing and support teams on UI/UX improvements and performance issues.'
+                            jobdetails2='A key achievement was enhancing the UX by adding empty states, help buttons, and Google Sign-In for easier user access.'
                         />
 
                         <JobInfoBox
@@ -93,16 +79,9 @@ const Work = (props: Props) => {
                             position='Associate Application Operations Engineer'
                             companyName='NICE Interactive Solutions India'
                             companylink='https://www.nice.com/company/about-us'
-                            location='Pune, India'
-                            jobdetails='I worked in the CLOUD department for Satmetrix 
-                            (enterprise product that NICE licenses). My job entailed 
-                            administering the JBoss and HTTP Apache servers, deploying new releases/hotfixes
-                            of our software to both staging and production environments, provisioning/ de-provisioning
-                            servers for our clients, managing Globalscape FTP, DNS, Mail and MySQL servers of Satmetrix&apos;s environments,
-                            troubleshooting server performance issues and creating root cause analysis reports. I also helped solve tickets raised
-                            by our support team and took up customer tickets wherein I helped our clients setup AWS services like SES for their organisation.'
-                            jobdetails2='I was awarded the SPOT award in recognition for my dedication, positive attitude and co-ordination among teams from 
-                            different departments. My team also won the best team in the cloud department award for three quarters in a row.'
+                            location='Remote Pune, India'
+                            jobdetails='I worked in the CLOUD department for Satmetrix, administering JBoss and HTTP Apache servers, deploying software releases, and managing environments (staging, production) as well as Globalscape FTP, DNS, Mail, and MySQL servers. I handled server provisioning, troubleshooting, and root cause analysis, while also assisting clients with AWS services like SES. Additionally, I resolved support tickets and collaborated across departments.'
+                            jobdetails2='I received the SPOT award for my dedication and teamwork, and my team won the best cloud department team award for three consecutive quarters.'
                         />
                     </Stack>
                 </Stack>

@@ -67,14 +67,12 @@ export const TechStack = () => {
 
 const myassetbuddyTechStack: TechStack[] = [
     { logo: typescript, label: 'TypeScript' },
-    { logo: javascript, label: 'JavaScript' },
     { logo: react, label: 'React' },
     { logo: aws, label: 'AWS' },
     { logo: frappe, label: 'Frappe' },
     { logo: python, label: 'Python' },
     { logo: postman, label: 'Postman' },
     { logo: git, label: 'Git' },
-    { logo: linear, label: 'Linear' },
     { logo: firebase, label: 'Firebase' },
     { logo: redis, label: 'Redis' },
     { logo: mongodb, label: 'MongoDB' }

@@ -33,7 +33,7 @@ export const MainContent = () => {
                             <Box>
                                 <Typewriter
                                     options={{
-                                        strings: ['software developer', 'product manager', 'ui/ux student', 'open-source contributor', 'artist'],
+                                        strings: ['software developer', 'product manager', 'ui/ux student', 'open-source contributor', 'wannabe artist'],
                                         autoStart: true,
                                         loop: true,
                                     }}

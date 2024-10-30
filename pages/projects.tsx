@@ -18,9 +18,7 @@ import { SiChakraui, SiCss3, SiJavascript, SiMaterialui, SiPython, SiSupabase, S
 import { FaBootstrap, FaReact } from 'react-icons/fa'
 import { FiFigma } from 'react-icons/fi'
 
-type Props = {}
-
-const Projects = (props: Props) => {
+const Projects = () => {
 
     const headingColor = 'linear(to-r, blue.200, pink.200)'
 
@@ -63,7 +61,6 @@ const Projects = (props: Props) => {
                             to create dashboards/admin panels with ease. It helps you generate high 
                             quality dummy data and validate existing data.'
                             link='/projects/fake-data-generator'
-                            projectLink='https://crux-supabase-admin.vercel.app/'
                             githubLink='https://github.com/nikkothari22/crux'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
@@ -91,7 +88,7 @@ const Projects = (props: Props) => {
                             in near-real time by using TEC data from fixed IGS stations 
                             in India, Thailand, and Malaysia.'
                             link='/projects/tec-mapping'
-                            projectLink='http://www.ppcrc.isquareit.edu.in/tec.html'>
+                            projectLink='https://ppcrc.isquareit.edu.in/tec.html'>
                             <HStack>
                                 <Icon as={SiPython} color='blue.300' />
                                 <Text>Python</Text>
@@ -107,6 +104,33 @@ const Projects = (props: Props) => {
                             <HStack>
                                 <Icon as={SiMaterialui} color='blue.300' />
                                 <Text>Material UI</Text>
+                            </HStack>
+                        </ProjectBox>
+
+                        <ProjectBox
+                            image={project5}
+                            heading='Portfolio Website'
+                            data='This is a just for fun passion project that I have created
+                            for collating my recent projects and helping my future employers/
+                            prospective clients know more about me.'
+                            link='/projects/portfolio-website'
+                            projectLink='https://www.janhvipatil.me/'
+                            githubLink='https://github.com/janhvipatil/Portfolio'>
+                            <HStack>
+                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
+                                <Text>NextJS</Text>
+                            </HStack>
+                            <HStack>
+                                <Icon as={SiChakraui} color='blue.300' />
+                                <Text>Chakra UI</Text>
+                            </HStack>
+                            <HStack>
+                                <Icon as={SiTypescript} color='blue.300' />
+                                <Text>TypeScript</Text>
+                            </HStack>
+                            <HStack>
+                                <Icon as={TbBrandVercel} color='blue.300' />
+                                <Text>Vercel</Text>
                             </HStack>
                         </ProjectBox>
 
@@ -148,40 +172,12 @@ const Projects = (props: Props) => {
                         </ProjectBox>
 
                         <ProjectBox
-                            image={project5}
-                            heading='Portfolio Website'
-                            data='This is a just for fun passion project that I have created
-                            for collating my recent projects and helping my future employers/
-                            prospective clients know more about me.'
-                            link='/projects/portfolio-website'
-                            projectLink='https://www.janhvipatil.me/'
-                            githubLink='https://github.com/janhvipatil/Portfolio'>
-                            <HStack>
-                                <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
-                                <Text>NextJS</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={SiChakraui} color='blue.300' />
-                                <Text>Chakra UI</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={SiTypescript} color='blue.300' />
-                                <Text>TypeScript</Text>
-                            </HStack>
-                            <HStack>
-                                <Icon as={TbBrandVercel} color='blue.300' />
-                                <Text>Vercel</Text>
-                            </HStack>
-                        </ProjectBox>
-
-                        <ProjectBox
                             image={project6}
                             heading='Blog Starter Template'
                             data='I have used Sanity IO headless CMS, NextJS and Chakra UI to 
                             create a blog template that can be used to easily jumpstart any project that needs
                             a website with a blog.'
                             link='/projects/blog-using-nextjs-sanityio'
-                            projectLink='https://crux-blog.vercel.app/'
                             githubLink='https://github.com/janhvipatil/Crux-Blog-Frontend'>
                             <HStack>
                                 <Icon as={TbBrandNextjs} fontSize='1.2em' color='blue.300' />
@@ -210,7 +206,6 @@ const Projects = (props: Props) => {
                             if not, they will turn back. 
                             The game continues until all cards are matched.'
                             link='/projects/memory-game'
-                            projectLink='https://memory-game-jp.vercel.app/'
                             githubLink='https://github.com/janhvipatil/Memory-Game'>
                             <HStack>
                                 <Icon as={SiJavascript} color='blue.300' />
