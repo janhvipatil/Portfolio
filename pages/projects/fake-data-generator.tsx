@@ -306,7 +306,7 @@ const Project1 = (props: Props) => {
                     </Stack>
                     <Divider />
                     <Flex justifyContent='space-between' pr={{ base: 5 }}>
-                        <Link href={'/projects'} passHref>
+                        <Link href={'#projects'} passHref>
                             <Button width='fit-content' variant='ghost' colorScheme='blue' size={{ base: 'sm' }}>All Projects</Button>
                         </Link>
                         <Link href={'/projects/tec-mapping'} passHref>
