@@ -11,7 +11,7 @@
 }
 
 .tiltArrow {
-    transform: rotate(160deg) translateX(300px) translateY(200px);
+    transform: rotate(165deg) translateX(300px) translateY(200px);
 }
 
 .tiltBox2 {
@@ -19,5 +19,5 @@
 }
 
 .tiltArrow2 {
-    transform: rotate(-150deg) translateX(550px) translateY(-150px);
+    transform: rotate(-150deg) translateX(580px) translateY(-150px);
 }

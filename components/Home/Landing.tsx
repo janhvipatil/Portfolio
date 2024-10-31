@@ -1,30 +1,18 @@
-import { Box, HStack } from '@chakra-ui/react'
-import { MainContent } from '../LandingUI'
-import Lottie from 'react-lottie'
-import animationData from '../../assets/animations/anime.json'
+import { Box, Flex } from '@chakra-ui/react'
+import { Footer } from '../Footer'
+import { Contact } from '../Contact/Contact'
+import { Work } from '../Work/Work'
+import { About } from '../About/About'
+import { Projects } from '../Projects/Projects'
 
 export const Landing = () => {
-
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice'
-        }
-    }
-
     return (
-        <>
-            <HStack display={{ base: 'none', md: 'flex' }}>
-                <MainContent />
-                <Box>
-                    <Lottie options={defaultOptions} height={800} width={400} />
-                </Box>
-            </HStack>
-            <Box display={{ base: 'flex', md: 'none' }}>
-                <MainContent />
-            </Box>
-        </>
+        <Flex direction='column'>
+            <Box id="about"><About /></Box>
+            <Box id="projects"><Projects /></Box>
+            <Box id="work"><Work /></Box>
+            <Box id="contact"><Contact /></Box>
+            <Footer />
+        </Flex>
     )
 }

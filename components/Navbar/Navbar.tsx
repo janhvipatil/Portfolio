@@ -7,39 +7,39 @@ import { Logo } from '../Logo/Logo'
 import { HiDownload } from 'react-icons/hi'
 
 const Links = [
-    {
-        name: "Projects",
-        path: "/projects",
-    },
-    {
-        name: "Work",
-        path: "/work",
-    },
-    {
-        name: "About",
-        path: "/about",
-    },
-    {
-        name: "Contact",
-        path: "/contact",
-    },
+    { name: "Projects", path: "#projects" },
+    { name: "Work", path: "#work" },
+    { name: "Contact", path: "#contact" },
 ]
 
-const NavLink = ({ children, path }: { children: ReactNode; path: string }) => {
-
-    const borderColor = useColorModeValue('black', 'white')
-
+const NavLink = ({ children, path }: { children: ReactNode, path: string }) => {
+    const textColor = useColorModeValue('black', 'white')
     return (
         <Box
+            as="a"
+            href={path}
+            position="relative"
             py={1}
             _hover={{
                 textDecoration: 'none',
+                color: textColor,
+                cursor: 'pointer',
+                fontWeight: 'medium',
                 transform: 'scale(1.05)',
-                transition: 'all ease-in-out .2s',
-                borderBottom: `1px solid ${borderColor}`,
-                cursor: 'pointer'
+                _after: {
+                    content: '""',
+                    position: 'absolute',
+                    left: 0,
+                    bottom: '-4px',
+                    width: '100%',
+                    height: '5px',
+                    background: 'linear-gradient(90deg, #FFFAA0 90%, transparent 100%)',
+                    borderRadius: '2px 2px 0px 0px',
+                    transform: 'rotate(-4deg)',
+                    zIndex: -1,
+                },
             }}>
-            <Link href={path}><Text fontSize='lg'>{children}</Text></Link>
+            <Text fontSize="lg">{children}</Text>
         </Box>
     )
 }
@@ -66,10 +66,6 @@ export const Navbar = () => {
         };
     }, []);
 
-    const boxShadow = useColorModeValue(
-        "0px 2px 4px rgba(0, 0, 0, 0.2)",
-        "0px 2px 4px rgba(255, 255, 255, 0.1)"
-    );
     const navBackgroundColor = useColorModeValue(
         "rgba(255, 255, 255, 0.96)",
         "rgba(026, 032, 044, 0.96)"
@@ -86,7 +82,6 @@ export const Navbar = () => {
                 w='full'
                 style={{ zIndex: 999 }}
                 bgColor={navBackgroundColor}
-                boxShadow={applyBoxShadow ? boxShadow : "none"}
                 transition="all .2s ease-in-out"
                 justifyContent={{ base: 'space-between' }}>
 
@@ -120,16 +115,13 @@ export const Navbar = () => {
                                 <Link href='/' passHref>
                                     <Button onClick={onClose} as='a' variant='ghost'>Home</Button>
                                 </Link>
-                                <Link href='/projects' passHref>
+                                <Link href='#projects' passHref>
                                     <Button onClick={onClose} as='a' variant='ghost'>Projects</Button>
                                 </Link>
-                                <Link href='/work' passHref>
+                                <Link href='#work' passHref>
                                     <Button onClick={onClose} as='a' variant='ghost'>Work</Button>
                                 </Link>
-                                <Link href='/about' passHref>
-                                    <Button onClick={onClose} as='a' variant='ghost'>About</Button>
-                                </Link>
-                                <Link href='/contact' passHref>
+                                <Link href='#contact' passHref>
                                     <Button onClick={onClose} as='a' variant='ghost'>Contact</Button>
                                 </Link>
                             </Stack>

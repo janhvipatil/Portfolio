@@ -3,9 +3,7 @@ import { Logo } from "../Logo/Logo"
 import { TbCoffee } from 'react-icons/tb'
 import { HiHeart } from 'react-icons/hi'
 
-type Props = {}
-
-export const Footer = (props: Props) => {
+export const Footer = () => {
 
     const footerBGColor = useColorModeValue('gray.50', 'gray.800')
 
