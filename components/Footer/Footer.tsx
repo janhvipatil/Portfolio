@@ -1,4 +1,4 @@
-import { Divider, Flex, HStack, Stack, Text, useColorModeValue } from "@chakra-ui/react"
+import { Flex, HStack, Stack, Text, useColorModeValue } from "@chakra-ui/react"
 import { Logo } from "../Logo/Logo"
 import { TbCoffee } from 'react-icons/tb'
 import { HiHeart } from 'react-icons/hi'
@@ -9,12 +9,11 @@ export const Footer = () => {
 
     return (
         <>
-            <Flex bottom='0' width='full' px={4} pb={2} display={{ base: 'flex', md: 'none' }}>
+            <Flex bottom='0' width='full' bg={footerBGColor} px={4} py={2} display={{ base: 'flex', md: 'none' }}>
                 <Stack width='full'>
-                    <Divider />
                     <HStack justifyContent='space-between'>
                         <HStack spacing={1}>
-                            <Logo height={22} width={22} />
+                            <Logo height={20} width={20} />
                             <Text fontSize='xs' color='subtle'>
                                 &copy; {new Date().getFullYear()} Janhvi Patil
                             </Text>

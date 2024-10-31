@@ -19,16 +19,17 @@ export const ProjectBox = ({ image, heading, data, children, link, projectLink, 
 
     const boxColorMD = useColorModeValue('white', 'linear(to-tr, gray.700, blackAlpha.700)')
     const boxColorBase = useColorModeValue('white', 'linear(to-b, gray.700, blackAlpha.700)')
+    const boxColor = useColorModeValue('white', 'gray.700')
 
     return (
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }}>
             <Box
                 boxShadow='md'
-                zIndex={1}
                 pr={{ base: 6, md: 4 }}
                 pl={{ base: 6, md: 4 }}
                 pt={{ base: 6, md: 4 }}
                 pb={{ base: 6, md: 4 }}
+                bgColor={boxColor}
                 rounded='lg'
                 bgGradient={{ base: boxColorBase, md: boxColorMD }}
                 width='full'>
