@@ -23,7 +23,8 @@ export const ProjectBox = ({ image, heading, data, children, link, projectLink, 
     return (
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }}>
             <Box
-                boxShadow='lg'
+                boxShadow='md'
+                zIndex={1}
                 pr={{ base: 6, md: 4 }}
                 pl={{ base: 6, md: 4 }}
                 pt={{ base: 6, md: 4 }}

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import arrowDark from '../../assets/curved-arrow-dark.png'
 import arrowLight from '../../assets/curved-arrow-light.png'
 import styles from '../../styles/CustomStyles.module.css'
+import { SiGoodreads } from 'react-icons/si'
 
 export const Contact = () => {
 
@@ -25,7 +26,7 @@ export const Contact = () => {
                         bgClip='text'>Let&apos;s talk.</Heading>
                     <Text fontSize={{ base: 'md', md: 'lg' }} color={textColor}>Tell me about your project.<br />We can build something amazing together 🚀</Text>
                     <Box alignSelf={'center'} textAlign='left'>
-                        <HStack spacing={4} boxShadow='md' p='4' rounded='md' bg={boxBG}>
+                        <HStack spacing={4} boxShadow='base' p='4' rounded='md' bg={boxBG}>
                             <Center bg={mailBoxBG} rounded={'md'} boxSize='40px' fontSize={'xl'}>
                                 <FiMail color={iconColor} />
                             </Center>
@@ -36,7 +37,7 @@ export const Contact = () => {
                         </HStack>
                         <Stack display={{ base: 'none', md: 'flex' }}>
                             <Box className={styles.tiltBox2} width='250px'>
-                                <Text className={styles.customFont} color={scribbleColor}>
+                                <Text className={styles.customFont} fontSize={'2xl'} color={scribbleColor}>
                                     Don&apos;t be a stranger, hit me up on any of my socials to connect.
                                 </Text>
                             </Box>
@@ -64,6 +65,9 @@ export const Contact = () => {
                                 </Link>
                                 <Link isExternal href='https://github.com/janhvipatil'>
                                     <IconButton aria-label='Github' icon={<AiFillGithub fontSize="1.5rem" />} />
+                                </Link>
+                                <Link isExternal href='https://www.goodreads.com/user/show/19382307'>
+                                    <IconButton aria-label='Goodreads' icon={<SiGoodreads fontSize="1.2rem" />} />
                                 </Link>
                             </HStack>
                         </ButtonGroup>

@@ -1,6 +1,6 @@
-import { Box, Center, Flex, Heading, HStack, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Center, Flex, Heading, HStack, SimpleGrid, Stack, Text, useColorModeValue, VStack } from '@chakra-ui/react'
 import React from 'react'
-import { MdOutlineAlternateEmail, MdOutlineCake } from 'react-icons/md'
+import { MdOutlineAlternateEmail } from 'react-icons/md'
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import Image from 'next/image'
 import workspaceLight from '../../assets/about/workspace-light.jpg'
@@ -21,7 +21,7 @@ export const About = () => {
         <>
             <Flex
                 pl={{ base: 10, md: 56 }}
-                pt={{ base: 28, md: 44 }}
+                pt={{ base: 36, md: 44 }}
                 pr={{ base: 10, md: 52 }}
                 pb={{ base: 12, md: 24 }}>
                 <HStack spacing={4} align='flex-start' flexDirection={{ base: 'column', md: 'row' }}>
@@ -31,25 +31,30 @@ export const About = () => {
                             <CustomHeading headingText='Product Engineer' boxColor='pink.100' chars={7.5} />
                             <CustomHeading headingText='UI/ UX Designer' boxColor='blue.100' chars={7.5} />
                         </Box>
-                        <Center display={{ base: 'block', md: 'none' }} px={10}>
+                        <Flex
+                            textAlign={'center'}
+                            direction="column"
+                            align="center"
+                            justify="center"
+                            display={{ base: 'block', md: 'none' }}
+                            w="100%">
                             <CustomHeading headingText='Software Developer' boxColor='yellow.100' chars={8.5} />
                             <CustomHeading headingText='Product Engineer' boxColor='pink.100' chars={7.5} />
-                            <CustomHeading headingText='UI/ UX Designer' boxColor='blue.100' chars={7.5} />
-                        </Center>
+                            <CustomHeading headingText='UI/UX Designer' boxColor='blue.100' chars={7.5} />
+                        </Flex>
                         <Stack spacing={4} py={6} display={{ base: 'flex', md: 'none' }}>
                             <Center>
-                                <Image src={avatar} alt='my picture' height='200px' width='200px' />
+                                <Image src={avatar} alt='my picture' height='180px' width='180px' />
                             </Center>
                             <Center px={4} textAlign='center'>
                                 <Text className={styles.customFont}>
-                                    I&apos;m fascinated by the intersection between tech, business and life.
                                     My goal is to help build great products that have a lasting impact.
                                 </Text>
                             </Center>
                         </Stack>
                         <Stack spacing={{ base: 16, md: 6 }} direction={{ base: 'column-reverse', md: 'column' }}>
                             <Stack spacing={{ base: 4, md: 4 }} width={{ base: '100%', md: '70%' }}>
-                                <Stack spacing={2}>
+                                <Stack spacing={2} pt={{ base: 10, md: 0 }}>
                                     <Text as='p'>
                                         Hi, I am <strong>Janhvi</strong>, a full-stack software developer who wants to build products that make a difference.
                                         My top skills lie within front-end web app development and my go-to tech stack includes
@@ -71,13 +76,20 @@ export const About = () => {
                                     </Text>
                                 </Stack>
                             </Stack>
-                            <Box width={{ md: '60%' }} px={{ base: 8, md: 0 }}>
-                                <SimpleGrid columns={2} spacing={2}>
+                            <Flex width={{ md: '60%' }} display={{ base: 'none', md: 'flex' }}>
+                                <SimpleGrid columns={{ md: 2 }} spacing={2}>
                                     <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Janhvi Patil</Text></HStack>
                                     <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Pune, India</Text></HStack>
                                     <HStack spacing={2}><HiOutlineMail size={'1.1em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
                                 </SimpleGrid>
-                            </Box>
+                            </Flex>
+                            <VStack display={{ base: 'flex', md: 'none' }}>
+                                <HStack spacing={4}>
+                                    <HStack spacing={2}><MdOutlineAlternateEmail fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Janhvi Patil</Text></HStack>
+                                    <HStack spacing={2}><HiOutlineLocationMarker fontSize='1.1em' /><Text color={textColor} fontSize={{ base: 'sm' }}>Pune, India</Text></HStack>
+                                </HStack>
+                                <HStack spacing={2}><HiOutlineMail size={'1.1em'} /><Text color={textColor} fontSize={{ base: 'sm' }}>janhvi716@gmail.com</Text></HStack>
+                            </VStack>
                         </Stack>
                     </Stack>
                     <Stack spacing={10} display={{ base: 'none', md: 'flex' }}>

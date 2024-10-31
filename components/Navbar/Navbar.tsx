@@ -45,19 +45,10 @@ const NavLink = ({ children, path }: { children: ReactNode, path: string }) => {
 }
 
 export const Navbar = () => {
-
-    // on scroll get the users scroll position
-    // if the user has scrolled 20px, change boxShadow to true
     const [applyBoxShadow, setApplyBoxShadow] = useState(false);
-
     useEffect(() => {
-
         const handleScroll = () => {
-            if (window.scrollY > 20) {
-                setApplyBoxShadow(true);
-            } else {
-                setApplyBoxShadow(false);
-            }
+            setApplyBoxShadow(window.scrollY > 20);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -71,6 +62,8 @@ export const Navbar = () => {
         "rgba(026, 032, 044, 0.96)"
     )
 
+    const dotColor = useColorModeValue('rgba(0, 0, 0, 0.125)', 'rgba(255, 255, 255, 0.125)')
+
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
@@ -83,8 +76,10 @@ export const Navbar = () => {
                 style={{ zIndex: 999 }}
                 bgColor={navBackgroundColor}
                 transition="all .2s ease-in-out"
-                justifyContent={{ base: 'space-between' }}>
-
+                justifyContent={{ base: 'space-between' }}
+                bgImage={`radial-gradient(circle, ${dotColor} 1px, transparent 1px)`}
+                bgSize="25px 25px"
+            >
                 <Center
                     display={{ base: 'none', md: 'flex' }}
                     _hover={{
@@ -155,7 +150,6 @@ export const Navbar = () => {
                 <Box pt={1}>
                     <ColorModeSwitcher display={{ md: 'none' }} />
                 </Box>
-
             </Flex>
         </div>
     )

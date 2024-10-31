@@ -1,9 +1,10 @@
 .customFont {
-    font-family: 'Gochi Hand', cursive;
-    src: url('../assets/Gochi_Hand/GochiHand-Regular.ttf');
-    font-weight: 400;
+    font-family: 'Caveat', cursive;
+    src: url('../assets/Caveat/Caveat-VariableFont_wght.ttf');
+    font-weight: 500;
     font-style: medium;
-    font-size: 20px;
+    line-height: 1.4;
+    font-size: 22px;
 }
 
 .tiltBox {
